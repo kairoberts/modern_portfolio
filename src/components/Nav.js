@@ -3,13 +3,16 @@ import logo from "../images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { IoIosArrowDropup } from "react-icons/io";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
   const [button, setButton] = useState(true);
+  const { pathname } = useLocation();
 
   const changeBackground = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 50) {
       setNav(true);
     } else {
       setNav(false);
@@ -39,12 +42,32 @@ const Nav = () => {
         <ul>
           <li>
             <Link to="/">About</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/" ? "40%" : "0%" }}
+              className="line"
+            ></motion.div>
           </li>
           <li>
             <Link to="/work">Work</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{
+                width: pathname === "/work" ? "40%" : "0%",
+              }}
+              className="line"
+            ></motion.div>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
+              className="line"
+            ></motion.div>
           </li>
         </ul>
       </header>

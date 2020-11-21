@@ -8,44 +8,72 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion";
+import { fadeIn, titleAnimation } from "../Animations";
 
 const Banner = () => {
   return (
-    <section className="banner-image">
-      <img src={newcastle} alt="Newcastle upon Tyne" className="banner-image" />
-      <div className="title">
-        <div className="hide">
-          <h2>Aspiring Full Stack Developer</h2>
+    <section>
+      <motion.section
+        variants={fadeIn}
+        className="banner-image"
+        initial="hidden"
+        animate="show"
+      >
+        <img
+          src={newcastle}
+          alt="Newcastle upon Tyne"
+          className="banner-image"
+        />
+        <div className="title">
+          <div className="hide">
+            <motion.h2 variants={titleAnimation}>
+              Aspiring Full Stack Developer
+            </motion.h2>
+          </div>
+          <div className="hide">
+            <motion.div variants={titleAnimation} className="flex-item">
+              <a href="https://www.instagram.com/_kairoberts" className="icons">
+                <AiOutlineInstagram size={45} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kairobertss"
+                className="icons"
+              >
+                <AiOutlineLinkedin size={45} />
+              </a>
+              <a href="https://github.com/kairoberts" className="icons">
+                <AiFillGithub size={45} />
+              </a>
+            </motion.div>
+          </div>
+          <div className="hide">
+            <Link to="/contact">
+              <motion.button
+                variants={titleAnimation}
+                className="btn-container"
+              >
+                Get In Touch
+              </motion.button>
+            </Link>
+            <motion.button
+              variants={titleAnimation}
+              className="btn-container"
+              href={cv}
+              download="KaiRobertsCV"
+            >
+              Download CV
+            </motion.button>
+          </div>
         </div>
-        <div className="flex-item">
-          <a href="https://www.instagram.com/_kairoberts" className="icons">
-            <AiOutlineInstagram size={45} />
-          </a>
-          <a href="https://www.linkedin.com/in/kairobertss" className="icons">
-            <AiOutlineLinkedin size={45} />
-          </a>
-          <a href="https://github.com/kairoberts" className="icons">
-            {" "}
-            <AiFillGithub size={45} />
-          </a>
-        </div>
-        <Link to="/contact">
-          <button variant="outline-light" className="btn-container">
-            Get In Touch
-          </button>
-        </Link>
-
-        <button className="btn-container" href={cv} download="KaiRobertsCV">
-          Download CV
-        </button>
-      </div>
-      <ScrollLink to="about" spy={true} smooth={true} duration={600}>
-        <div className="scroll-arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </ScrollLink>
+        <ScrollLink to="about" spy={true} smooth={true} duration={600}>
+          <div className="scroll-arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </ScrollLink>
+      </motion.section>
     </section>
   );
 };

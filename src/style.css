@@ -6,7 +6,11 @@
 }
 
 body {
-  background: #252525;
+  background: rgb(39, 39, 39);
+}
+
+.hide {
+  overflow: hidden;
 }
 
 /* Header starts here */
@@ -30,6 +34,15 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.line {
+  height: 0.2rem;
+  background: #42e3ff;
+  width: 0%;
+  position: absolute;
+  bottom: -50%;
+  left: 70%;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -45,12 +58,18 @@ li {
   position: relative;
   cursor: pointer;
   font-size: 1.1rem;
+  transition: all 0.5s ease;
 }
 
 .logo {
   height: 70px;
   width: 150px;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .scroll-btn {
@@ -224,7 +243,7 @@ button:hover {
 }
 
 .info-container {
-  padding: 5rem 0rem 0rem 0rem;
+  padding: 5rem 2rem 0rem 2rem;
   width: 65%;
   margin: 0 auto;
 }
@@ -240,7 +259,6 @@ button:hover {
 }
 
 .content-message {
-  width: 55vw;
   margin: 0%;
   padding: 1rem 0rem;
   font-size: 1.2rem;
@@ -324,7 +342,7 @@ button:hover {
 .question-line {
   background: #42e3ff;
   height: 0.2rem;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem 2rem 0rem;
   width: 100%;
   text-align: center;
 }
@@ -339,4 +357,107 @@ button:hover {
 .question-icon.active {
   transform: rotate(0);
   transition: all 0.5s ease;
+}
+
+/* Work Section */
+.svg-image {
+  position: absolute;
+  margin-top: 10%;
+  z-index: -1;
+  left: 0;
+}
+
+.work {
+  min-height: 100vh;
+}
+
+.work-container {
+  padding: 6rem 8rem 3rem 8rem;
+  min-height: 100vh;
+}
+
+.work-image {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-container h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+/* Work Details */
+.details {
+  min-height: 90vh;
+  padding-top: 10vh;
+  padding: 2rem 5rem 0rem 5rem;
+  z-index: 2;
+}
+
+.details h2 {
+  padding: 5rem 0rem 0rem 0rem;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.details img {
+  height: 70vh;
+}
+
+.learnt {
+  min-height: 35vh;
+  display: flex;
+  margin: 0rem 0rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.learnt-style {
+  padding: 2rem;
+  text-align: center;
+}
+
+.learnt-style h3 {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+  font-weight: lighter;
+}
+
+.learnt-style p {
+  color: white;
+}
+
+.learning {
+  padding: 5rem 0rem 0rem 0rem;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+.image-container {
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+}
+
+.image-array {
+  height: 35vh;
+  cursor: pointer;
+}
+
+.gallery {
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
 }

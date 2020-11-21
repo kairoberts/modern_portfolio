@@ -7,6 +7,7 @@ import AboutQuestions from "./components/AboutQuestion";
 import Design from "./components/Design";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import WorkDetails from "./components/WorkDetails";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+        <Route exact to="/work/:id">
+          <WorkDetails />
         </Route>
       </Switch>
     </div>
