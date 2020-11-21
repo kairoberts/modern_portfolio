@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import newcastle from "../images/newcastle.jpg";
 import cv from "../file/KaiRobertsCV.pdf";
-import {
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 import { fadeIn, titleAnimation } from "../Animations";
@@ -33,9 +29,6 @@ const Banner = () => {
           </div>
           <div className="hide">
             <motion.div variants={titleAnimation} className="flex-item">
-              <a href="https://www.instagram.com/_kairoberts" className="icons">
-                <AiOutlineInstagram size={45} />
-              </a>
               <a
                 href="https://www.linkedin.com/in/kairobertss"
                 className="icons"
