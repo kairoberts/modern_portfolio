@@ -1,3 +1,3 @@
 Modern Portfolio
 
-This portfolio was created to showcase some my new skills learned through React courses I completed online.
+This portfolio has been created to showcase some of the new skills I acquired through React courses I completed online.
