@@ -49,14 +49,14 @@ const Banner = () => {
                 Get In Touch
               </motion.button>
             </Link>
-            <motion.button
-              variants={titleAnimation}
-              className="btn-container"
-              href={cv}
-              download="KaiRobertsCV"
-            >
-              Download CV
-            </motion.button>
+            <Link>
+              <motion.button
+                variants={titleAnimation}
+                className="btn-container"
+              >
+                Download CV
+              </motion.button>
+            </Link>
           </div>
         </div>
         <ScrollLink to="about" spy={true} smooth={true} duration={600}>
