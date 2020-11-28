@@ -26,7 +26,7 @@ body {
   z-index: 1;
   position: fixed;
   background-color: transparent;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav.active {
@@ -36,11 +36,11 @@ body {
 
 .line {
   height: 0.2rem;
-  background: #42e3ff;
+  background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
   width: 0%;
   position: absolute;
   bottom: -50%;
-  left: 70%;
+  left: 65%;
 }
 
 a {
@@ -58,7 +58,6 @@ li {
   position: relative;
   cursor: pointer;
   font-size: 1.1rem;
-  transition: all 0.5s ease;
 }
 
 .logo {
@@ -69,7 +68,7 @@ li {
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .scroll-btn {
@@ -87,7 +86,7 @@ li {
 }
 
 .scroll-btn:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .scroll-btn.active {
@@ -124,7 +123,7 @@ li {
     -1.5px -1.5px 0 black;
 }
 
-.title button {
+.buttons {
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
@@ -133,13 +132,13 @@ li {
   border: 2px solid #42e3ff;
   background-color: transparent;
   color: white;
+  margin: 1%;
   transition: all 0.5s ease;
 }
 
-button:hover {
+.buttons:hover {
   background-color: #42e3ff;
   color: black;
-  transform: scale(1.1);
 }
 
 .flex-item {
@@ -147,22 +146,14 @@ button:hover {
   padding: 0.5rem;
 }
 
-.flex-item a {
-  padding: 0rem 0.5rem 0rem 0rem;
-  color: white;
-  transition: all 0.5s ease;
-}
-
 .flex-item a:hover {
   color: #42e3ff;
 }
 
-.btn-container {
-  margin: 1%;
-}
-
-.hide {
-  overflow: hidden;
+.flex-item a {
+  padding: 0rem 0.5rem 0rem 0rem;
+  color: white;
+  transition: all 0.5s ease;
 }
 
 .scroll-arrow {
@@ -318,7 +309,6 @@ button:hover {
 }
 
 .question {
-  cursor: pointer;
   text-align: center;
   color: white;
   padding: 0rem 10rem 0rem 10rem;
@@ -326,23 +316,25 @@ button:hover {
 }
 
 .answer {
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   color: white;
 }
 
 .answer p {
   padding: 0rem 3rem 0rem 3rem;
+  font-size: 1.1rem;
 }
 
 .question-h2 {
   padding: 2rem;
   font-size: 1.8rem;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 .question-line {
-  background: #42e3ff;
-  height: 0.2rem;
+  background-image: linear-gradient(to right, #42e3ff, rgb(140, 0, 255));
+  height: 0.25rem;
   margin: 1rem 0rem 2rem 0rem;
   width: 100%;
   text-align: center;
@@ -350,7 +342,6 @@ button:hover {
 
 .question-icon {
   transform: rotate(-180deg);
-  color: #42e3ff;
   margin: 1rem 0rem 0rem 1rem;
   transition: all 0.5s ease;
 }
@@ -360,7 +351,7 @@ button:hover {
   transition: all 0.5s ease;
 }
 
-/* Work Section */
+/* Projects Section */
 .svg-image {
   position: absolute;
   margin-top: 10%;
@@ -368,19 +359,9 @@ button:hover {
   left: 0;
 }
 
-.work {
-  min-height: 100vh;
-}
-
 .work-container {
-  padding: 6rem 8rem 3rem 8rem;
-  min-height: 100vh;
-}
-
-.work-image {
-  height: 70vh;
-  width: 100%;
-  object-fit: cover;
+  padding: 6rem 8rem 1rem 8rem;
+  min-height: 5vh;
 }
 
 .work-container h2 {
@@ -390,36 +371,78 @@ button:hover {
   text-align: center;
 }
 
+.image-container {
+  width: 100%;
+  display: grid;
+  padding: 0rem 3rem 0rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-row-gap: 3rem;
+  justify-items: center;
+}
+
+.image-container h2 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.image-array {
+  height: 45vh;
+  cursor: pointer;
+  object-fit: cover;
+  display: block;
+}
+
+.project {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px 1px white;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h2 {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
 /* Work Details */
 .details {
-  min-height: 90vh;
-  padding-top: 10vh;
-  padding: 2rem 5rem 0rem 5rem;
-  z-index: 2;
+  min-height: 80vh;
+  padding: 0rem 4rem 0rem 4rem;
+  display: flex;
 }
 
-.details h2 {
-  padding: 5rem 0rem 0rem 0rem;
+.details p {
   color: white;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 3rem;
+  padding: 2rem 2rem 0rem 2rem;
+  font-size: 1.4rem;
 }
 
-.details img {
+.details-container button {
+  margin: 2rem;
+}
+
+.detail-image {
   height: 70vh;
+  width: 45%;
+  object-fit: cover;
 }
 
 .learnt {
   min-height: 35vh;
   display: flex;
-  margin: 0rem 0rem;
+  margin: 0rem 2rem;
   align-items: center;
   justify-content: space-around;
 }
 
 .learnt-style {
-  padding: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
   text-align: center;
 }
 
@@ -442,23 +465,158 @@ button:hover {
   font-size: 2.5rem;
 }
 
-.image-container {
-  min-height: 80vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-items: center;
-}
-
-.image-array {
-  height: 35vh;
-  cursor: pointer;
-}
-
 .gallery {
   padding: 3rem;
   color: white;
   text-align: center;
   font-weight: lighter;
   font-size: 2.5rem;
+}
+
+/* Carousel */
+.carousel-container {
+  display: flex;
+  width: 81%;
+  height: 75vh;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  min-width: 100%;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.img-container {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 8%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.5s ease;
+}
+
+.prev:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 8%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.5s ease;
+}
+
+.next:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Contact Section */
+.form-container {
+  height: 55vh;
+  width: 45%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #3a3a3a;
+  opacity: 0.9;
+  border-radius: 2%;
+  box-shadow: 0px 0px 15px 1px white;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.contact-container {
+  padding: 5rem 10rem 0rem 10rem;
+  min-height: 100vh;
+}
+
+.contact-container h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  border-bottom: 3px solid white;
+}
+
+form textarea {
+  min-height: 20vh;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.1rem;
+  resize: none;
+  border-bottom: 3px solid white;
+}
+
+form label {
+  color: white;
+  font-size: 1rem;
+}
+
+form button {
+  position: absolute;
+  bottom: 2%;
+  left: 44%;
+}
+
+/* Footer Section */
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.5rem;
+}
+
+footer h3 {
+  color: white;
+  font-weight: lighter;
+}
+
+/* Error Message */
+.error {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(28%, -50%);
+  text-align: center;
+}
+
+.error h1 {
+  font-weight: lighter;
+  font-size: 5rem;
+  color: red;
 }

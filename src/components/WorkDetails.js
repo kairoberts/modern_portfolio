@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { WorkState } from "../WorkState";
 import { motion } from "framer-motion";
-import { pageAnimations } from "../Animations";
-import { Fade } from "react-awesome-reveal";
+import { pageAnimations, lineAnimation } from "../Animations";
+import ScrollTop from "./ScrollTop";
+import Carousel from "./Carousel";
+import Wave from "./Wave";
 
-const WorkDetails = () => {
+const WorkDetails = ({ working }) => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [working] = useState(WorkState);
   const [work, setWork] = useState(null);
 
   useEffect(() => {
     const currentWork = working.filter((workState) => workState.url === url);
     setWork(currentWork[0]);
   }, [working, url]);
+
   return (
     <>
       {work && (
@@ -23,68 +24,64 @@ const WorkDetails = () => {
           initial="hidden"
           animate="show"
         >
-          <div className="details">
+          <ScrollTop />
+          <div className="work-container">
             <h2>{work.name}</h2>
-            <div className="question-line"></div>
-            <img src={work.mainImg} alt={work.title} className="work-image" />
+            <motion.div
+              variants={lineAnimation}
+              className="question-line"
+            ></motion.div>
+            <Wave />
           </div>
-          <Fade direction="in" duration="2000" triggerOnce>
-            <h2 className="learning">What I Learnt</h2>
-            <div className="learnt">
-              {work.learnt.map((work) => (
-                <Learnt
-                  title={work.title}
-                  description={work.description}
-                  key={work.title}
-                />
-              ))}
+          <div className="details">
+            <img src={work.mainImg} alt={work.title} className="detail-image" />
+            <div className="details-container">
+              <p className="content-message">{work.description}</p>
+              <button className="buttons">
+                <a
+                  href="https://kr-old-portfolio.netlify.app"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  Visit Page
+                </a>
+              </button>
             </div>
-          </Fade>
+          </div>
+          <h2 className="learning">What Did I Learn?</h2>
+          <div className="learnt">
+            {work.learnt.map((learnt) => (
+              <Learnt
+                key={learnt.id}
+                title={learnt.title}
+                description={learnt.description}
+              />
+            ))}
+          </div>
           <h2 className="gallery">Image Gallery</h2>
-          <Fade direction="in" duration="2000" triggerOnce>
-            <div className="image-container">
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
+          <div className="image-container">
+            {work.pictures.map((picture) => (
+              <Carousel
+                key={picture.id}
+                alt={picture.alt}
+                image={picture.image}
+                image1={picture.image1}
+                image2={picture.image2}
+                image3={picture.image3}
+                image4={picture.image4}
+                image5={picture.image5}
               />
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
-              />
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
-              />
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
-              />
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
-              />
-              <img
-                src={work.mainImg}
-                alt={work.title}
-                className="image-array"
-              />
-            </div>
-          </Fade>
+            ))}
+          </div>
         </motion.section>
       )}
-      ;
     </>
   );
 };
 
-const Learnt = ({ description, title }) => {
+const Learnt = ({ description, title, id }) => {
   return (
-    <div className="learnt-style">
+    <div key={id} className="learnt-style">
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="question-line"></div>

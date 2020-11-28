@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import AboutQuestions from "./components/AboutQuestion";
 import Design from "./components/Design";
-import Work from "./components/Work";
 import Contact from "./components/Contact";
 import WorkDetails from "./components/WorkDetails";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Error from "./components/Error";
 import { Switch, Route } from "react-router-dom";
+import { WorkState } from "./WorkState";
 
 function App() {
+  const [working] = useState(WorkState);
+
   return (
     <div className="App">
       <Nav />
@@ -20,16 +25,21 @@ function App() {
           <About />
           <Design />
           <AboutQuestions />
+          <Footer />
         </Route>
-        <Route exact path="/work">
-          <Work />
+        <Route exact path="/projects">
+          <Projects working={working} />
+          <Footer />
+        </Route>
+        <Route path="/projects/:id">
+          <WorkDetails working={working} />
+          <Footer />
         </Route>
         <Route exact path="/contact">
           <Contact />
         </Route>
-        <Route exact to="/work/:id">
-          <WorkDetails />
-        </Route>
+
+        <Route component={Error} />
       </Switch>
     </div>
   );

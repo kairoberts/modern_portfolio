@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
-import { Link } from "react-router-dom";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -36,12 +35,14 @@ const Nav = () => {
         onClick={() => scroll.scrollToTop()}
       />
       <header className={nav ? "nav active" : "nav"}>
-        <Link to="/">
+        <Link exact to="/">
           <img src={logo} alt="KR Web Development" className="logo" />
         </Link>
         <ul>
           <li>
-            <Link to="/">About</Link>
+            <Link exact to="/">
+              About
+            </Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
@@ -50,12 +51,12 @@ const Nav = () => {
             ></motion.div>
           </li>
           <li>
-            <Link to="/work">Work</Link>
+            <Link to="/projects">Projects</Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
               animate={{
-                width: pathname === "/work" ? "40%" : "0%",
+                width: pathname === "/projects" ? "40%" : "0%",
               }}
               className="line"
             ></motion.div>

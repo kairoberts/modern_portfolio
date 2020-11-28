@@ -9,7 +9,6 @@ export const pageAnimations = {
     transition: {
       duration: 1,
       when: "beforeChildren",
-      staggerChildren: 0.5,
     },
   },
 };
@@ -33,6 +32,18 @@ export const fadeIn = {
   },
   show: {
     opacity: 1,
+    transition: {
+      duration: 1.5,
+    },
+  },
+};
+
+export const lineAnimation = {
+  hidden: {
+    width: "0%",
+  },
+  show: {
+    width: "100%",
     transition: {
       duration: 1.5,
     },

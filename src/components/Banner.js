@@ -41,22 +41,14 @@ const Banner = () => {
             </motion.div>
           </div>
           <div className="hide">
-            <Link to="/contact">
-              <motion.button
-                variants={titleAnimation}
-                className="btn-container"
-              >
-                Get In Touch
-              </motion.button>
-            </Link>
-            <Link>
-              <motion.button
-                variants={titleAnimation}
-                className="btn-container"
-              >
+            <motion.div className="btn-container" variants={titleAnimation}>
+              <Link to="/contact">
+                <button className="buttons">Get In Touch</button>
+              </Link>
+              <a className="buttons" href={cv} download="KaiRobertsCV">
                 Download CV
-              </motion.button>
-            </Link>
+              </a>
+            </motion.div>
           </div>
         </div>
         <ScrollLink to="about" spy={true} smooth={true} duration={600}>
