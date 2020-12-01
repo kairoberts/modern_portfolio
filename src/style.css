@@ -14,7 +14,6 @@ body {
 }
 
 /* Header starts here */
-
 .nav {
   min-height: 10vh;
   display: flex;
@@ -23,7 +22,7 @@ body {
   align-items: center;
   padding: 0.5rem 10rem;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   background-color: transparent;
   transition: all 0.5s ease-in-out;
@@ -92,6 +91,98 @@ li {
 .scroll-btn.active {
   opacity: 1;
   right: 0;
+}
+
+.menu-container {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  ul li {
+    display: none;
+  }
+  .scroll-btn {
+    width: 12%;
+  }
+  .scroll-btn:hover {
+    transform: scale(1);
+  }
+  .logo {
+    margin-left: -1.5rem;
+  }
+  .logo:hover {
+    transform: scale(1);
+  }
+  .menu-container {
+    display: block;
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    transform: translateX(-100%);
+    box-shadow: 0px 0px 20px 0px white;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    background-color: #3a3a3a;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .menu-container-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 1rem 0rem 0rem 1rem;
+    z-index: 2;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    margin-top: 30%;
+    z-index: 2;
+  }
+  .menu p {
+    font-size: 1.7rem;
+    margin: 3rem 0rem 0rem 5rem;
+  }
+  .line1 {
+    height: 0.2rem;
+    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
+    width: 0%;
+    position: absolute;
+    bottom: 78%;
+    left: 20%;
+  }
+  .line2 {
+    height: 0.2rem;
+    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
+    width: 0%;
+    position: absolute;
+    bottom: 58%;
+    left: 20%;
+  }
+  .line3 {
+    height: 0.2rem;
+    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
+    width: 0%;
+    position: absolute;
+    bottom: 38%;
+    left: 20%;
+  }
 }
 
 /* Banner image starts here */
@@ -211,6 +302,20 @@ li {
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .buttons {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .title h2 {
+    font-size: 3.3rem;
+  }
+  .scroll-arrow {
+    display: none;
+  }
+}
+
 /* About Section */
 .about {
   min-height: 100vh;
@@ -276,6 +381,27 @@ li {
   font-size: 1.1rem;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .content-info {
+    display: block;
+    width: 100%;
+  }
+  .info-container {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .info-container h2 {
+    font-size: 2rem;
+  }
+  .content-message {
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+  }
+}
+
 /* Design Section */
 .design-container {
   margin-top: 5%;
@@ -301,8 +427,21 @@ li {
   padding: 1rem;
 }
 
-/* About Questions */
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .design-container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .design-icons h2 {
+    font-size: 2rem;
+  }
+  .design-icon {
+    width: 40%;
+  }
+}
 
+/* About Questions */
 .about-me {
   min-height: 85vh;
   margin-top: 5%;
@@ -349,6 +488,21 @@ li {
 .question-icon.active {
   transform: rotate(0);
   transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .question {
+    margin-top: 5rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .question-h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .answer p {
+    padding: 0rem;
+    font-size: 1rem;
+  }
 }
 
 /* Projects Section */
@@ -408,6 +562,24 @@ li {
 .project h2 {
   padding: 1rem;
   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .work-container {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+  .work-container h2 {
+    font-size: 2.5rem;
+  }
+  .image-array {
+    height: 30vh;
+  }
+  .image-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .svg-image {
+    display: none;
+  }
 }
 
 /* Work Details */
@@ -473,6 +645,27 @@ li {
   font-size: 2.5rem;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .details {
+    display: block;
+    padding: 0rem;
+  }
+  .detail-image {
+    height: 30vh;
+    width: 100%;
+  }
+  .learning {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+  .learnt {
+    display: block;
+  }
+  .gallery {
+    font-size: 2rem;
+  }
+}
+
 /* Carousel */
 .carousel-container {
   display: flex;
@@ -525,6 +718,13 @@ li {
 
 .next:hover {
   background: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .carousel-container {
+    width: 100%;
+    height: 30vh;
+  }
 }
 
 /* Contact Section */
@@ -591,6 +791,23 @@ form button {
   left: 44%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .svg-image {
+    display: none;
+  }
+  .form-container {
+    height: 52vh;
+    width: 90%;
+    display: block;
+  }
+  .contact-container {
+    padding: 5rem 2rem 0rem 2rem;
+  }
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
 /* Footer Section */
 
 footer {
@@ -604,6 +821,13 @@ footer {
 footer h3 {
   color: white;
   font-weight: lighter;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  footer h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 
 /* Error Message */

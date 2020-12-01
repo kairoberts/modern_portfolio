@@ -4,10 +4,12 @@ import { animateScroll as scroll } from "react-scroll";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
+import { Twirl as Hamburger } from "hamburger-react";
 
-const Nav = () => {
+const Nav = ({ menuStatus, setMenuStatus, isOpen, setOpen }) => {
   const [nav, setNav] = useState(false);
   const [button, setButton] = useState(true);
+
   const { pathname } = useLocation();
 
   const changeBackground = () => {
@@ -35,9 +37,13 @@ const Nav = () => {
         onClick={() => scroll.scrollToTop()}
       />
       <header className={nav ? "nav active" : "nav"}>
+        <div className="mobile-menu" onClick={() => setMenuStatus(!menuStatus)}>
+          <Hamburger color="white" toggled={menuStatus} />
+        </div>
         <Link exact to="/">
           <img src={logo} alt="KR Web Development" className="logo" />
         </Link>
+
         <ul>
           <li>
             <Link exact to="/">

@@ -10,27 +10,27 @@ const Design = () => {
     <section>
       <div className="design-container">
         <div className="design-icons">
-          <BsPen size={80} />
+          <BsPen size={80} className="design-icon" />
           <h2>Plan</h2>
         </div>
 
         <div className="design-icons">
-          <GiPencilBrush size={80} />
+          <GiPencilBrush size={80} className="design-icon" />
           <h2>Design</h2>
         </div>
 
         <div className="design-icons">
-          <BsCodeSlash size={80} />
+          <BsCodeSlash size={80} className="design-icon" />
           <h2>Develop</h2>
         </div>
 
         <div className="design-icons">
-          <ImClipboard size={80} />
+          <ImClipboard size={80} className="design-icon" />
           <h2>Test</h2>
         </div>
 
         <div className="design-icons">
-          <VscRocket size={80} />
+          <VscRocket size={80} className="design-icon" />
           <h2>Deploy</h2>
         </div>
       </div>

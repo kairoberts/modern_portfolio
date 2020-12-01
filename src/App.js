@@ -12,13 +12,16 @@ import Footer from "./components/Footer";
 import Error from "./components/Error";
 import { Switch, Route } from "react-router-dom";
 import { WorkState } from "./WorkState";
+import MobileMenu from "./components/MobileMenu";
 
 function App() {
   const [working] = useState(WorkState);
+  const [menuStatus, setMenuStatus] = useState(false);
 
   return (
     <div className="App">
-      <Nav />
+      <Nav menuStatus={menuStatus} setMenuStatus={setMenuStatus} />
+      <MobileMenu menuStatus={menuStatus} setMenuStatus={setMenuStatus} />
       <Switch>
         <Route exact path="/">
           <Banner />
@@ -38,7 +41,6 @@ function App() {
         <Route exact path="/contact">
           <Contact />
         </Route>
-
         <Route component={Error} />
       </Switch>
     </div>
