@@ -39,7 +39,7 @@ const WorkDetails = ({ working }) => {
               <p className="content-message">{work.description}</p>
               <button className="buttons">
                 <a
-                  href="https://kr-old-portfolio.netlify.app"
+                  href={work.buttonUrl}
                   target="_blank"
                   rel="noreferrer noopener nofollow"
                 >
