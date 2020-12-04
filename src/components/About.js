@@ -6,7 +6,7 @@ import { FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import { SiPython } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
 import ScrollTop from "../components/ScrollTop";
@@ -62,8 +62,8 @@ const About = () => {
               <p>Bootstrap</p>
             </div>
             <div className="skill">
-              <SiPython size={55} />
-              <p>Python</p>
+              <SiFlask size={55} />
+              <p>Python Flask</p>
             </div>
             <div className="skill">
               <SiMysql size={70} />

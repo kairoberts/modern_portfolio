@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
 import { Twirl as Hamburger } from "hamburger-react";
 
-const Nav = ({ menuStatus, setMenuStatus, isOpen, setOpen }) => {
+const Nav = ({ menuStatus, setMenuStatus }) => {
   const [nav, setNav] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -30,6 +30,10 @@ const Nav = ({ menuStatus, setMenuStatus, isOpen, setOpen }) => {
   };
   window.addEventListener("scroll", hiddenButton);
 
+  const preventScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
+
   return (
     <>
       <IoIosArrowDropup
@@ -38,7 +42,11 @@ const Nav = ({ menuStatus, setMenuStatus, isOpen, setOpen }) => {
       />
       <header className={nav ? "nav active" : "nav"}>
         <div className="mobile-menu" onClick={() => setMenuStatus(!menuStatus)}>
-          <Hamburger color="white" toggled={menuStatus} />
+          <Hamburger
+            color="white"
+            toggled={menuStatus}
+            toggle={() => setMenuStatus(!menuStatus)}
+          />
         </div>
         <Link exact to="/">
           <img src={logo} alt="KR Web Development" className="logo" />
