@@ -162,8 +162,17 @@ li {
     z-index: 2;
   }
   .menu div {
-    font-size: 1.7rem;
-    margin: 3rem 0rem 0rem 5rem;
+    font-size: 1.6rem;
+    margin: 3rem 0rem 0rem 7rem;
+  }
+  .mobile-socials {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 25%;
+  }
+  .icons {
+    margin-left: 2rem;
   }
   .line1 {
     height: 0.2rem;
@@ -242,16 +251,16 @@ li {
   color: black;
 }
 
-.flex-item {
+.socials {
   display: block;
   padding: 0.5rem;
 }
 
-.flex-item a:hover {
+.socials a:hover {
   color: #42e3ff;
 }
 
-.flex-item a {
+.socials a {
   padding: 0rem 0.5rem 0rem 0rem;
   color: white;
   transition: all 0.5s ease;
@@ -333,6 +342,9 @@ li {
     height: 100vh;
     object-fit: cover;
     display: block;
+  }
+  .socials {
+    display: none;
   }
 }
 

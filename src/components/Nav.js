@@ -30,9 +30,9 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
   };
   window.addEventListener("scroll", hiddenButton);
 
-  // const preventScroll = () => {
-  //   document.body.style.overflow = "hidden";
-  // };
+  const preventScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
 
   return (
     <>
@@ -42,11 +42,13 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
       />
       <header className={nav ? "nav active" : "nav"}>
         <div className="mobile-menu" onClick={() => setMenuStatus(!menuStatus)}>
-          <Hamburger
-            color="white"
-            toggled={menuStatus}
-            toggle={() => setMenuStatus(!menuStatus)}
-          />
+          <div onClick={() => preventScroll()}>
+            <Hamburger
+              color="white"
+              toggled={menuStatus}
+              toggle={() => setMenuStatus(!menuStatus)}
+            />
+          </div>
         </div>
         <Link to="/">
           <img src={logo} alt="KR Web Development" className="logo" />

@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
   const { pathname } = useLocation();
@@ -37,6 +38,14 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
             className="line3"
           ></motion.div>
         </div>
+      </div>
+      <div className="mobile-socials">
+        <a href="https://www.linkedin.com/in/kairobertss" className="icons">
+          <AiOutlineLinkedin size={45} />
+        </a>
+        <a href="https://github.com/kairoberts" className="icons">
+          <AiFillGithub size={45} />
+        </a>
       </div>
     </div>
   );

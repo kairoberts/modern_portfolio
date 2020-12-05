@@ -35,7 +35,7 @@ const Banner = () => {
           </motion.h2>
         </div>
         <div className="hide">
-          <motion.div variants={titleAnimation} className="flex-item">
+          <motion.div variants={titleAnimation} className="socials">
             <a href="https://www.linkedin.com/in/kairobertss" className="icons">
               <AiOutlineLinkedin size={45} />
             </a>
@@ -55,6 +55,13 @@ const Banner = () => {
             </a>
           </motion.div>
         </div>
+        <motion.h3
+          variants={titleAnimation}
+          style={{ color: "white", fontWeight: "bold" }}
+        >
+          Please note this website is still in development so some features
+          aren't finished
+        </motion.h3>
       </div>
       <ScrollLink to="about" spy={true} smooth={true} duration={600}>
         <div className="scroll-arrow">
