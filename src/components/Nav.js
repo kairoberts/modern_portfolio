@@ -30,9 +30,9 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
   };
   window.addEventListener("scroll", hiddenButton);
 
-  const preventScroll = () => {
-    document.body.style.overflow = "hidden";
-  };
+  // const preventScroll = () => {
+  //   document.body.style.overflow = "hidden";
+  // };
 
   return (
     <>
@@ -48,15 +48,13 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
             toggle={() => setMenuStatus(!menuStatus)}
           />
         </div>
-        <Link exact to="/">
+        <Link to="/">
           <img src={logo} alt="KR Web Development" className="logo" />
         </Link>
 
         <ul>
           <li>
-            <Link exact to="/">
-              About
-            </Link>
+            <Link to="/">About</Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}

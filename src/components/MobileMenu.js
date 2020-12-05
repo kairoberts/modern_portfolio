@@ -10,18 +10,16 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
       className={`menu-container ${menuStatus ? "menu-container-active" : " "}`}
     >
       <div className="menu">
-        <p onClick={() => setMenuStatus(!menuStatus)}>
-          <Link exact to="/">
-            About
-          </Link>
+        <div onClick={() => setMenuStatus(!menuStatus)}>
+          <Link to="/">About</Link>
           <motion.div
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{ width: pathname === "/" ? "40%" : "0%" }}
             className="line1"
           ></motion.div>
-        </p>
-        <p onClick={() => setMenuStatus(!menuStatus)}>
+        </div>
+        <div onClick={() => setMenuStatus(!menuStatus)}>
           <Link to="/projects">Projects</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -29,8 +27,8 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
             animate={{ width: pathname === "/projects" ? "40%" : "0%" }}
             className="line2"
           ></motion.div>
-        </p>
-        <p onClick={() => setMenuStatus(!menuStatus)}>
+        </div>
+        <div onClick={() => setMenuStatus(!menuStatus)}>
           <Link to="/contact">Contact</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -38,7 +36,7 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
             animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
             className="line3"
           ></motion.div>
-        </p>
+        </div>
       </div>
     </div>
   );
