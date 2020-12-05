@@ -2,52 +2,78 @@ import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
+import logo from "../images/logo.png";
+import { Twirl as Hamburger } from "hamburger-react";
 
 export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
   const { pathname } = useLocation();
 
+  // const preventScroll = () => {
+  //   document.body.style.overflow = "hidden";
+  // };
+
   return (
-    <div
-      className={`menu-container ${menuStatus ? "menu-container-active" : " "}`}
-    >
-      <div className="menu">
-        <div onClick={() => setMenuStatus(!menuStatus)}>
-          <Link to="/">About</Link>
-          <motion.div
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "40%" : "0%" }}
-            className="line1"
-          ></motion.div>
+    <>
+      <div className="mobile-icon" onClick={() => setMenuStatus(!menuStatus)}>
+        <Hamburger
+          color="white"
+          toggled={menuStatus}
+          toggle={() => setMenuStatus(!menuStatus)}
+        />
+      </div>
+
+      <div
+        className={`menu-container ${
+          menuStatus ? "menu-container-active" : " "
+        }`}
+      >
+        <Link to="/">
+          <img
+            src={logo}
+            alt="KR Web Development"
+            className="mobile-logo"
+            onClick={() => setMenuStatus(!menuStatus)}
+          />
+        </Link>
+        <div className="menu">
+          <div onClick={() => setMenuStatus(!menuStatus)}>
+            <Link to="/">About</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/" ? "40%" : "0%" }}
+              className="line1"
+            ></motion.div>
+          </div>
+          <div onClick={() => setMenuStatus(!menuStatus)}>
+            <Link to="/projects">Projects</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/projects" ? "40%" : "0%" }}
+              className="line2"
+            ></motion.div>
+          </div>
+          <div onClick={() => setMenuStatus(!menuStatus)}>
+            <Link to="/contact">Contact</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
+              className="line3"
+            ></motion.div>
+          </div>
         </div>
-        <div onClick={() => setMenuStatus(!menuStatus)}>
-          <Link to="/projects">Projects</Link>
-          <motion.div
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/projects" ? "40%" : "0%" }}
-            className="line2"
-          ></motion.div>
-        </div>
-        <div onClick={() => setMenuStatus(!menuStatus)}>
-          <Link to="/contact">Contact</Link>
-          <motion.div
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
-            className="line3"
-          ></motion.div>
+        <div className="mobile-socials">
+          <a href="https://www.linkedin.com/in/kairobertss" className="icons">
+            <AiOutlineLinkedin size={45} />
+          </a>
+          <a href="https://github.com/kairoberts" className="icons">
+            <AiFillGithub size={45} />
+          </a>
         </div>
       </div>
-      <div className="mobile-socials">
-        <a href="https://www.linkedin.com/in/kairobertss" className="icons">
-          <AiOutlineLinkedin size={45} />
-        </a>
-        <a href="https://github.com/kairoberts" className="icons">
-          <AiFillGithub size={45} />
-        </a>
-      </div>
-    </div>
+    </>
   );
 };
 

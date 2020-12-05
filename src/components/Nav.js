@@ -4,9 +4,8 @@ import { animateScroll as scroll } from "react-scroll";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
-import { Twirl as Hamburger } from "hamburger-react";
 
-const Nav = ({ menuStatus, setMenuStatus }) => {
+const Nav = () => {
   const [nav, setNav] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -30,10 +29,6 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
   };
   window.addEventListener("scroll", hiddenButton);
 
-  // const preventScroll = () => {
-  //   document.body.style.overflow = "hidden";
-  // };
-
   return (
     <>
       <IoIosArrowDropup
@@ -41,15 +36,6 @@ const Nav = ({ menuStatus, setMenuStatus }) => {
         onClick={() => scroll.scrollToTop()}
       />
       <header className={nav ? "nav active" : "nav"}>
-        <div className="mobile-menu" onClick={() => setMenuStatus(!menuStatus)}>
-          {/* <div onClick={() => preventScroll()}> */}
-          <Hamburger
-            color="white"
-            toggled={menuStatus}
-            toggle={() => setMenuStatus(!menuStatus)}
-          />
-          {/* </div> */}
-        </div>
         <Link to="/">
           <img src={logo} alt="KR Web Development" className="logo" />
         </Link>

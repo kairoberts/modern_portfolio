@@ -97,7 +97,7 @@ li {
   display: none;
 }
 
-.mobile-menu {
+.mobile-icon {
   display: none;
 }
 .menu {
@@ -121,7 +121,7 @@ li {
     transform: scale(1);
   }
   .logo {
-    margin-left: -1.5rem;
+    margin-left: -2rem;
   }
   .logo:hover {
     transform: scale(1);
@@ -133,10 +133,10 @@ li {
     height: 100%;
     left: 0;
     transform: translateX(-100%);
-    box-shadow: 0px 0px 10px 0px white;
+    box-shadow: 0px 0px 15px 0px white;
     overflow: hidden;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #3a3a3a;
     opacity: 0;
     transition: all 0.5s ease;
@@ -145,13 +145,13 @@ li {
     opacity: 1;
     transform: translateX(0);
   }
-  .mobile-menu {
+  .mobile-icon {
     display: block;
     position: fixed;
     left: 0;
     top: 0;
     margin: 1rem 0rem 0rem 1rem;
-    z-index: 2;
+    z-index: 3;
   }
   .menu {
     display: block;
@@ -173,6 +173,13 @@ li {
   }
   .icons {
     margin-left: 2rem;
+  }
+  .mobile-logo {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 100px;
+    width: 60%;
   }
   .line1 {
     height: 0.2rem;
@@ -607,13 +614,18 @@ li {
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .work-container {
-    padding: 6rem 2rem 1rem 2rem;
+    padding: 6rem 3rem 1rem 3rem;
   }
   .work-container h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    padding: 0rem;
+  }
+  .question-line {
+    margin: 0.2rem 0rem 1rem 0rem;
   }
   .image-array {
     height: 30vh;
+    width: auto;
   }
   .image-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -863,10 +875,11 @@ form button {
     display: block;
   }
   .contact-container {
-    padding: 5rem 2rem 0rem 2rem;
+    padding: 5rem 3rem 0rem 3rem;
   }
   .contact-container h2 {
-    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2.2rem;
   }
   .btn-container {
     display: block;
