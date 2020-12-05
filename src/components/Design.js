@@ -29,7 +29,7 @@ const Design = () => {
           <h2>Test</h2>
         </div>
 
-        <div className="design-icons">
+        <div className="design-icons" id="last-child">
           <VscRocket size={80} className="design-icon" />
           <h2>Deploy</h2>
         </div>

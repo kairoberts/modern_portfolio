@@ -103,10 +103,16 @@ li {
 .menu {
   display: none;
 }
+.mobile-break {
+  display: none;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   ul li {
     display: none;
+  }
+  .mobile-break {
+    display: block;
   }
   .scroll-btn {
     width: 12%;
@@ -192,6 +198,10 @@ li {
   object-fit: cover;
   opacity: 0.9;
   z-index: -1;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .title {
@@ -310,9 +320,19 @@ li {
   }
   .title h2 {
     font-size: 3.3rem;
+    text-shadow: none;
   }
   .scroll-arrow {
     display: none;
+  }
+  #main-image {
+    display: none;
+  }
+  .mobile-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
   }
 }
 
@@ -431,13 +451,14 @@ li {
   .design-container {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 200px);
+    padding: 0rem;
   }
   .design-icons h2 {
     font-size: 2rem;
   }
-  .design-icon {
-    width: 40%;
+  #last-child {
+    margin-left: 7rem;
   }
 }
 
@@ -576,9 +597,13 @@ li {
   }
   .image-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0rem;
   }
   .svg-image {
     display: none;
+  }
+  .project:hover {
+    transform: scale(1);
   }
 }
 
@@ -645,6 +670,13 @@ li {
   font-size: 2.5rem;
 }
 
+#link-btn {
+  display: block;
+  text-align: center;
+  position: absolute;
+  right: 43.5%;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .details {
     display: block;
@@ -657,12 +689,18 @@ li {
   .learning {
     font-size: 2rem;
     padding: 3rem;
+    margin-top: 5rem;
   }
   .learnt {
     display: block;
   }
   .gallery {
     font-size: 2rem;
+  }
+  #link-btn {
+    left: 30%;
+    margin-top: 2rem;
+    width: 40%;
   }
 }
 
@@ -738,7 +776,8 @@ li {
   background: #3a3a3a;
   opacity: 0.9;
   border-radius: 2%;
-  box-shadow: 0px 0px 15px 1px white;
+  box-shadow: 0px 0px 10px 1px white;
+  text-align: center;
 }
 
 .btn-container {
@@ -747,7 +786,6 @@ li {
 
 .contact-container {
   padding: 5rem 10rem 0rem 10rem;
-  min-height: 100vh;
 }
 
 .contact-container h2 {
@@ -759,25 +797,30 @@ li {
 
 form input {
   width: 100%;
-  margin-bottom: 1.5rem;
   background: transparent;
   outline: none;
-  border: none;
+  height: 2rem;
+  border: 1px solid white;
   color: white;
-  font-size: 1.1rem;
-  border-bottom: 3px solid white;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding-left: 10px;
 }
 
 form textarea {
   min-height: 20vh;
   width: 100%;
   outline: none;
-  border: none;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
   background: transparent;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   resize: none;
-  border-bottom: 3px solid white;
+  padding: 5px 10px;
 }
 
 form label {
@@ -796,7 +839,7 @@ form button {
     display: none;
   }
   .form-container {
-    height: 52vh;
+    height: 54vh;
     width: 90%;
     display: block;
   }
@@ -809,6 +852,11 @@ form button {
   .btn-container {
     display: block;
     margin: 0rem;
+  }
+  #contact-btn {
+    position: absolute;
+    left: 30%;
+    width: 40%;
   }
 }
 

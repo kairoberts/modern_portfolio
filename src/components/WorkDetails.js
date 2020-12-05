@@ -37,15 +37,15 @@ const WorkDetails = ({ working }) => {
             <img src={work.mainImg} alt={work.title} className="detail-image" />
             <div className="details-container">
               <p className="content-message">{work.description}</p>
-              <button className="buttons">
-                <a
-                  href={work.buttonUrl}
-                  target="_blank"
-                  rel="noreferrer noopener nofollow"
-                >
-                  Visit Page
-                </a>
-              </button>
+              <a
+                href={work.buttonUrl}
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                className="buttons"
+                id="link-btn"
+              >
+                Visit Page
+              </a>
             </div>
           </div>
           <h2 className="learning">What Did I Learn?</h2>
