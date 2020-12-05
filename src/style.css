@@ -161,7 +161,7 @@ li {
     margin-top: 30%;
     z-index: 2;
   }
-  .menu p {
+  .menu div {
     font-size: 1.7rem;
     margin: 3rem 0rem 0rem 5rem;
   }
