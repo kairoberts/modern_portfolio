@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageAnimations, lineAnimation } from "../Animations";
+import { pageAnimations, lineAnimation, fadeIn } from "../Animations";
 import ScrollTop from "./ScrollTop";
 import Carousel from "./Carousel";
 import Wave from "./Wave";
+import { IoIosArrowBack } from "react-icons/io";
 
 const WorkDetails = ({ working }) => {
   const history = useHistory();
@@ -26,6 +27,11 @@ const WorkDetails = ({ working }) => {
         >
           <ScrollTop />
           <div className="work-container">
+            <motion.div variants={fadeIn} className="back-btn">
+              <Link to="/projects">
+                <IoIosArrowBack size={45} />
+              </Link>
+            </motion.div>
             <h2>{work.name}</h2>
             <motion.div
               variants={lineAnimation}
