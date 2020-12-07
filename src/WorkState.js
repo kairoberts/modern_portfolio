@@ -7,12 +7,19 @@ import musicplayer from "./images/musicplayer.jpg";
 import githubfinder from "./images/githubfinder.jpg";
 import portfolio from "./images/portfolio.jpg";
 // Carousel images for portfolio
-import aboutme from "./images/old-portfolio/aboutme.png";
-import clients from "./images/old-portfolio/clients.png";
-import krlandingpage from "./images/old-portfolio/krlandingpage.png";
-import krportfolio from "./images/old-portfolio/portfolio.png";
-import testimonials from "./images/old-portfolio/testimonials.png";
-import contactform from "./images/old-portfolio/contactform.png";
+import aboutme from "./images/old-portfolio/aboutme.jpeg";
+import clients from "./images/old-portfolio/clients.jpeg";
+import krlandingpage from "./images/old-portfolio/krlandingpage.jpeg";
+import krportfolio from "./images/old-portfolio/portfolio.jpeg";
+import testimonials from "./images/old-portfolio/testimonials.jpeg";
+import contactform from "./images/old-portfolio/contactform.jpeg";
+// Carousel Images for GitHub Finder
+import searching from "./images/github-finder/searching.jpeg";
+import validation from "./images/github-finder/validation.jpeg";
+import searchName from "./images/github-finder/searchingname.jpeg";
+import searchedAccount from "./images/github-finder/searchedaccount.jpeg";
+import profile from "./images/github-finder/profile.jpeg";
+import about from "./images/github-finder/about.jpeg";
 
 export const WorkState = () => {
   return [
@@ -58,53 +65,12 @@ export const WorkState = () => {
       ],
     },
     {
-      title: "Music Player",
-      name: "KR Music",
-      description:
-        "This was my first 'big' project in React, I bought an online course in order to help me along with this project. It gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that set the foundation for my React knowledge as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free mixtapes hosted on their official mixtape platforms.",
-      mainImg: musicplayer,
-      url: "/projects/music-player",
-      buttonUrl: "",
-      id: "2",
-      learnt: [
-        {
-          id: "1",
-          title: "Audio Files",
-          description:
-            "Learning JavaScripts build in audio features, to play/pause/skip tracks",
-        },
-        {
-          id: "2",
-          title: "useRef",
-          description: "Learning how to select specific HTML tags in React",
-        },
-        {
-          id: "3",
-          title: "useState",
-          description:
-            "Learning how to save files within state to be passed down as props",
-        },
-      ],
-      pictures: [
-        {
-          id: "2",
-          alt: "Music Player Images",
-          image: comingSoon,
-          image1: comingSoon,
-          image2: comingSoon,
-          image3: comingSoon,
-          image4: comingSoon,
-          image5: comingSoon,
-        },
-      ],
-    },
-    {
       title: "GitHub Finder",
       name: "GitHub Finder",
       description:
         "This was the first project I completed working with an API, its use was to pull user account information from GitHub and integrate the data into my app. It's only a small, unstylish project, however uses most of the key features in React, which is why I wanted to do it since I was able to try familarise myself with React's Context API. Although slightly confusing, I am confident I will eventually understand the process of implementing it into projects as well as remembering to use PropTypes to debug my code.",
       mainImg: githubfinder,
-      id: "3",
+      id: "2",
       url: "/projects/github-finder",
       buttonUrl: "https://kr-github-finder.netlify.app",
       learnt: [
@@ -127,8 +93,49 @@ export const WorkState = () => {
       ],
       pictures: [
         {
-          id: "3",
+          id: "2",
           alt: "Github Finder App Images",
+          image: searching,
+          image1: validation,
+          image2: searchName,
+          image3: searchedAccount,
+          image4: profile,
+          image5: about,
+        },
+      ],
+    },
+    {
+      title: "Music Player",
+      name: "KR Music",
+      description:
+        "This was my first 'big' project in React, I bought an online course in order to help me along with this project. It gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that set the foundation for my React knowledge as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free mixtapes hosted on their official mixtape platforms.",
+      mainImg: musicplayer,
+      url: "/projects/music-player",
+      buttonUrl: "",
+      id: "3",
+      learnt: [
+        {
+          id: "1",
+          title: "Audio Files",
+          description:
+            "Learning JavaScripts build in audio features, to play/pause/skip tracks",
+        },
+        {
+          id: "2",
+          title: "useRef",
+          description: "Learning how to select specific HTML tags in React",
+        },
+        {
+          id: "3",
+          title: "useState",
+          description:
+            "Learning how to save files within state to be passed down as props",
+        },
+      ],
+      pictures: [
+        {
+          id: "3",
+          alt: "Music Player Images",
           image: comingSoon,
           image1: comingSoon,
           image2: comingSoon,

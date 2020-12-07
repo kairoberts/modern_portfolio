@@ -1,8 +1,9 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
-import logo from "../images/logo.png";
+import { AiOutlineLinkedin, AiFillGithub, AiOutlineHome } from "react-icons/ai";
+import { RiMessage2Line } from "react-icons/ri";
+import { BsClipboardData } from "react-icons/bs";
 import { Twirl as Hamburger } from "hamburger-react";
 
 export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
@@ -27,17 +28,11 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
           menuStatus ? "menu-container-active" : " "
         }`}
       >
-        <Link to="/">
-          <img
-            src={logo}
-            alt="KR Web Development"
-            className="mobile-logo"
-            onClick={() => setMenuStatus(!menuStatus)}
-          />
-        </Link>
         <div className="menu">
           <div onClick={() => setMenuStatus(!menuStatus)}>
-            <Link to="/">About</Link>
+            <Link to="/">
+              <AiOutlineHome className="menu-icons" /> Home
+            </Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
@@ -46,7 +41,9 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
             ></motion.div>
           </div>
           <div onClick={() => setMenuStatus(!menuStatus)}>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">
+              <BsClipboardData className="menu-icons" /> Projects
+            </Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
@@ -55,7 +52,9 @@ export const MobileMenu = ({ menuStatus, setMenuStatus }) => {
             ></motion.div>
           </div>
           <div onClick={() => setMenuStatus(!menuStatus)}>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+              <RiMessage2Line className="menu-icons" /> Contact
+            </Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}

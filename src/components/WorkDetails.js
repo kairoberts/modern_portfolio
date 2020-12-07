@@ -29,7 +29,7 @@ const WorkDetails = ({ working }) => {
           <div className="work-container">
             <motion.div variants={fadeIn} className="back-btn">
               <Link to="/projects">
-                <IoIosArrowBack size={45} />
+                <IoIosArrowBack size={35} />
               </Link>
             </motion.div>
             <h2>{work.name}</h2>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import newcastle from "../images/newcastle.jpg";
-import mobilenewcastle from "../images/mobile-newcastle.jpg";
+// import mobilenewcastle from "../images/mobile-newcastle.jpg";
 import cv from "../file/KaiRobertsCV.pdf";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
@@ -17,17 +17,7 @@ const Banner = () => {
       initial="hidden"
       animate="show"
     >
-      <img
-        src={newcastle}
-        alt="Newcastle upon Tyne"
-        className="banner-image"
-        id="main-image"
-      />
-      <img
-        src={mobilenewcastle}
-        alt="Newcastle upon Tyne"
-        className="mobile-image"
-      />
+      <img src={newcastle} alt="Newcastle upon Tyne" className="banner-image" />
       <div className="title">
         <div className="hide">
           <motion.h2 variants={titleAnimation}>
@@ -55,13 +45,12 @@ const Banner = () => {
             </a>
           </motion.div>
         </div>
-        <motion.h3
-          variants={titleAnimation}
-          style={{ color: "white", fontWeight: "bold" }}
-        >
-          Please note this website is still in development so some features
-          aren't finished
-        </motion.h3>
+        <div className="hide">
+          <motion.h3 variants={titleAnimation} className="still-in-dev">
+            Please note this website is still in development so some features
+            aren't finished
+          </motion.h3>
+        </div>
       </div>
       <ScrollLink to="about" spy={true} smooth={true} duration={600}>
         <div className="scroll-arrow">

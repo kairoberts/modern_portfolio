@@ -30,6 +30,7 @@ body {
 
 .nav.active {
   background-color: #3a3a3a;
+  opacity: 0.9;
   transition: all 0.5s ease-in-out;
 }
 
@@ -115,13 +116,13 @@ li {
     display: block;
   }
   .scroll-btn {
-    width: 12%;
+    width: 14%;
   }
   .scroll-btn:hover {
     transform: scale(1);
   }
   .logo {
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
   .logo:hover {
     transform: scale(1);
@@ -129,15 +130,14 @@ li {
   .menu-container {
     display: block;
     position: fixed;
-    width: 80%;
+    width: 100%;
     height: 100%;
     left: 0;
     transform: translateX(-100%);
-    box-shadow: 0px 0px 15px 0px white;
     overflow: hidden;
     top: 0;
     z-index: 2;
-    background-color: #3a3a3a;
+    background-image: linear-gradient(to right, black, transparent);
     opacity: 0;
     transition: all 0.5s ease;
   }
@@ -162,48 +162,48 @@ li {
     z-index: 2;
   }
   .menu div {
-    font-size: 1.6rem;
-    margin: 3rem 0rem 0rem 7rem;
+    font-size: 1.7rem;
+    margin: 3rem 0rem 0rem 4rem;
+  }
+  .menu-icons {
+    position: absolute;
+    left: 0;
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
   }
   .mobile-socials {
     position: absolute;
     display: block;
     bottom: 0;
-    left: 25%;
+    left: -1;
   }
+
   .icons {
     margin-left: 2rem;
-  }
-  .mobile-logo {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    height: 100px;
-    width: 60%;
   }
   .line1 {
     height: 0.2rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
-    bottom: 78%;
-    left: -5%;
+    bottom: 80%;
+    left: -15%;
   }
   .line2 {
     height: 0.2rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
-    bottom: 58%;
-    left: -5%;
+    bottom: 60%;
+    left: -15%;
   }
   .line3 {
     height: 0.2rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
-    bottom: 38%;
-    left: -5%;
+    bottom: 40%;
+    left: -15%;
   }
 }
 
@@ -214,10 +214,6 @@ li {
   object-fit: cover;
   opacity: 0.9;
   z-index: -1;
-}
-
-.mobile-image {
-  display: none;
 }
 
 .title {
@@ -332,26 +328,33 @@ li {
   .buttons {
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 40%;
+  }
+  .title {
+    width: 90%;
   }
   .title h2 {
-    font-size: 3.3rem;
-    text-shadow: none;
+    font-size: 3rem;
   }
   .scroll-arrow {
     display: none;
   }
-  #main-image {
-    display: none;
-  }
-  .mobile-image {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
-  }
   .socials {
     display: none;
+  }
+  .still-in-dev {
+    display: none;
+  }
+}
+
+/* Iphone 11 media queries */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .title h2 {
+    font-size: 3.2rem;
+  }
+  .logo {
+    margin-left: -2rem;
   }
 }
 
@@ -477,7 +480,7 @@ li {
     font-size: 2rem;
   }
   #last-child {
-    margin-left: 7rem;
+    margin-left: 6rem;
   }
 }
 
@@ -533,7 +536,7 @@ li {
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .question {
     margin-top: 5rem;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 2rem 0rem 2rem;
   }
   .question-h2 {
     font-size: 1.5rem;
@@ -542,6 +545,9 @@ li {
   .answer p {
     padding: 0rem;
     font-size: 1rem;
+  }
+  .about-me {
+    min-height: 70vh;
   }
 }
 
@@ -556,7 +562,7 @@ li {
 .back-btn {
   color: white;
   position: absolute;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -638,7 +644,7 @@ li {
     transform: scale(1);
   }
   .back-btn {
-    margin: 0;
+    margin-top: 0rem;
   }
 }
 
@@ -729,6 +735,12 @@ li {
   .learnt {
     display: block;
   }
+  .learnt-style h3 {
+    font-size: 1.9rem;
+  }
+  .learnt-style p {
+    font-size: 1.05rem;
+  }
   .gallery {
     font-size: 2rem;
   }
@@ -758,6 +770,7 @@ li {
 
 .img-container {
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
