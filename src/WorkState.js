@@ -104,47 +104,47 @@ export const WorkState = () => {
         },
       ],
     },
-    {
-      title: "Music Player",
-      name: "KR Music",
-      description:
-        "This was my first 'big' project in React, I bought an online course in order to help me along with this project. It gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that set the foundation for my React knowledge as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free mixtapes hosted on their official mixtape platforms.",
-      mainImg: musicplayer,
-      url: "/projects/music-player",
-      buttonUrl: "",
-      id: "3",
-      learnt: [
-        {
-          id: "1",
-          title: "Audio Files",
-          description:
-            "Learning JavaScripts build in audio features, to play/pause/skip tracks",
-        },
-        {
-          id: "2",
-          title: "useRef",
-          description: "Learning how to select specific HTML tags in React",
-        },
-        {
-          id: "3",
-          title: "useState",
-          description:
-            "Learning how to save files within state to be passed down as props",
-        },
-      ],
-      pictures: [
-        {
-          id: "3",
-          alt: "Music Player Images",
-          image: comingSoon,
-          image1: comingSoon,
-          image2: comingSoon,
-          image3: comingSoon,
-          image4: comingSoon,
-          image5: comingSoon,
-        },
-      ],
-    },
+    // {
+    //   title: "Music Player",
+    //   name: "KR Music",
+    //   description:
+    //     "This was my first 'big' project in React, I bought an online course in order to help me along with this project. It gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that set the foundation for my React knowledge as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free mixtapes hosted on their official mixtape platforms.",
+    //   mainImg: musicplayer,
+    //   url: "/projects/music-player",
+    //   buttonUrl: "",
+    //   id: "3",
+    //   learnt: [
+    //     {
+    //       id: "1",
+    //       title: "Audio Files",
+    //       description:
+    //         "Learning JavaScripts build in audio features, to play/pause/skip tracks",
+    //     },
+    //     {
+    //       id: "2",
+    //       title: "useRef",
+    //       description: "Learning how to select specific HTML tags in React",
+    //     },
+    //     {
+    //       id: "3",
+    //       title: "useState",
+    //       description:
+    //         "Learning how to save files within state to be passed down as props",
+    //     },
+    //   ],
+    //   pictures: [
+    //     {
+    //       id: "3",
+    //       alt: "Music Player Images",
+    //       image: comingSoon,
+    //       image1: comingSoon,
+    //       image2: comingSoon,
+    //       image3: comingSoon,
+    //       image4: comingSoon,
+    //       image5: comingSoon,
+    //     },
+    //   ],
+    // },
     // {
     //   title: "Movie API",
     //   name: "KR Movies",

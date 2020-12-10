@@ -442,6 +442,10 @@ li {
   .image {
     width: 100%;
   }
+  .skills-container {
+    width: 100%;
+    background-color: pink;
+  }
 }
 
 /* Design Section */
@@ -455,7 +459,7 @@ li {
 
 .design-icons {
   color: white;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -466,21 +470,18 @@ li {
   font-size: 2.8rem;
   font-weight: lighter;
   color: #42e3ff;
-  padding: 1rem;
+  padding: 0rem;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .design-container {
-    margin-top: 10rem;
+    margin: 6rem 0rem 6rem 0rem;
     display: grid;
     grid-template-columns: repeat(2, 200px);
     padding: 0rem;
   }
   .design-icons h2 {
     font-size: 2rem;
-  }
-  #last-child {
-    margin-left: 6rem;
   }
 }
 
