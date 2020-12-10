@@ -1,9 +1,9 @@
 // Main images for website
-import comingSoon from "./images/comingsoon.jpg";
+// import comingSoon from "./images/comingsoon.jpg";
 // import gymstagram from "./images/gymstagram.jpg";
 // import movies from "./images/movies.jpg";
 // import todolist from "./images/todolist.jpg";
-import musicplayer from "./images/musicplayer.jpg";
+// import musicplayer from "./images/musicplayer.jpg";
 import githubfinder from "./images/githubfinder.jpg";
 import portfolio from "./images/portfolio.jpg";
 // Carousel images for portfolio
