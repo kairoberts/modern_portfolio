@@ -8,7 +8,12 @@ const Projects = ({ working }) => {
   return (
     <>
       {working && (
-        <motion.section variants={fadeIn} initial="hidden" animate="show">
+        <motion.section
+          variants={fadeIn}
+          initial="hidden"
+          animate="show"
+          id="projects"
+        >
           <ScrollTop />
           <div className="work-container">
             <h2>My Work</h2>

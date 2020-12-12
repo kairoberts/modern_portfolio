@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import newcastle from "../images/newcastle.jpg";
-// import mobilenewcastle from "../images/mobile-newcastle.jpg";
 import cv from "../file/KaiRobertsCV.pdf";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 import { fadeIn, titleAnimation } from "../Animations";
@@ -52,11 +52,9 @@ const Banner = () => {
           </motion.h3>
         </div>
       </div>
-      <ScrollLink to="about" spy={true} smooth={true} duration={600}>
+      <ScrollLink to="about" spy={true} smooth={true} duration={700}>
         <div className="scroll-arrow">
-          <span></span>
-          <span></span>
-          <span></span>
+          <BsChevronDoubleDown size={50} />
         </div>
       </ScrollLink>
     </motion.section>

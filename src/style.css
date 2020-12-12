@@ -270,58 +270,10 @@ li {
 }
 
 .scroll-arrow {
-  height: 30px;
-  width: 30px;
   position: absolute;
-  transform: translateY(-100px) translateX(700px) rotate(45deg);
-}
-
-.scroll-arrow span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
-  opacity: 0;
+  bottom: 0;
+  left: 49%;
   cursor: pointer;
-  animation: scroll-arrow 1.5s linear infinite;
-}
-
-.scroll-arrow span:nth-child(1) {
-  transform: translate(-15px, -15px);
-  animation-delay: 0.2s;
-}
-
-.scroll-arrow span:nth-child(2) {
-  transform: translate(0px, 0px);
-  animation-delay: 0.4s;
-}
-
-.scroll-arrow span:nth-child(3) {
-  transform: translate(15px, 15px);
-  animation-delay: 0.6s;
-}
-
-@keyframes scroll-arrow {
-  0% {
-    top: 10px;
-    left: 10px;
-    opacity: 1;
-  }
-  25% {
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-  }
-  50%,
-  100% {
-    top: 10px;
-    left: 10px;
-    opacity: 1;
-  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
@@ -576,6 +528,10 @@ li {
   font-weight: lighter;
   color: white;
   text-align: center;
+}
+
+#projects {
+  min-height: 90vh;
 }
 
 .image-container {
@@ -946,4 +902,64 @@ footer h3 {
   font-weight: lighter;
   font-size: 5rem;
   color: red;
+}
+
+/* Large Screen media queries */
+@media only screen and (min-device-width: 1800px) {
+  .logo {
+    margin-top: 0.5rem;
+    height: 80px;
+    width: 170px;
+  }
+  .info-container h2 {
+    font-size: 2.2rem;
+  }
+  .info-container h3 {
+    font-size: 1.8rem;
+  }
+  .info-container p {
+    font-size: 1.3rem;
+  }
+  .skills-container h3 {
+    font-size: 2.3rem;
+  }
+  .question-h2 {
+    font-size: 2.2rem;
+  }
+  .answer p {
+    font-size: 1.3rem;
+  }
+  .about-me {
+    min-height: 70vh;
+  }
+  .details {
+    padding: 0rem 8rem 0rem 8rem;
+  }
+  .details p {
+    font-size: 1.6rem;
+  }
+  #link-btn {
+    right: 46%;
+  }
+  .learnt-style h3 {
+    font-size: 2.5rem;
+  }
+  .learnt-style p {
+    font-size: 1.2rem;
+  }
+  .form-container {
+    min-height: 90vh;
+  }
+  form input {
+    width: 100%;
+    height: 3rem;
+  }
+
+  form textarea {
+    min-height: 25vh;
+  }
+
+  form label {
+    font-size: 1.2rem;
+  }
 }
