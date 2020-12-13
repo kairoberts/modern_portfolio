@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <div className="error">
       <h1>404: Page Does Not Exist</h1>
-      <Link exact to="/work/weather-app">
+      <Link exact to="/">
         <button className="buttons">Go Home</button>
       </Link>
     </div>
