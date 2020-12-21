@@ -183,7 +183,7 @@ li {
     margin-left: 2rem;
   }
   .line1 {
-    height: 0.2rem;
+    height: 0.1rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
@@ -191,7 +191,7 @@ li {
     left: -15%;
   }
   .line2 {
-    height: 0.2rem;
+    height: 0.1rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
@@ -199,7 +199,7 @@ li {
     left: -15%;
   }
   .line3 {
-    height: 0.2rem;
+    height: 0.1rem;
     background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
     width: 0%;
     position: absolute;
@@ -281,7 +281,8 @@ li {
   .buttons {
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
+    font-size: 1.1rem;
   }
   .title {
     width: 90%;
@@ -307,7 +308,7 @@ li {
     font-size: 3.2rem;
   }
   .logo {
-    margin-left: -2rem;
+    margin-left: -1.7rem;
   }
 }
 
@@ -857,8 +858,8 @@ form button {
   }
   #contact-btn {
     position: absolute;
-    left: 30%;
-    width: 40%;
+    left: 25%;
+    width: 50%;
   }
   form input {
     height: 2rem;
@@ -886,7 +887,7 @@ footer h3 {
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   footer h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 

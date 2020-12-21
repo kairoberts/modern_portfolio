@@ -22,7 +22,7 @@ const AboutQuestions = () => {
             </div>
           </Toggle>
 
-          <Toggle title="Why Web Development?">
+          <Toggle title="Why Web Dev?">
             <div className="answer">
               <p>
                 I had always enjoyed my Web Development modules during Uni,
