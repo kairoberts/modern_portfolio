@@ -229,7 +229,7 @@ li {
 }
 
 .title h2 {
-  font-size: 80px;
+  font-size: 4rem;
   padding: 3%;
   color: white;
   font-weight: lighter;
@@ -533,13 +533,12 @@ li {
 }
 
 #projects {
-  min-height: 90vh;
+  min-height: 99vh;
 }
 
 .image-container {
-  width: 100%;
   display: grid;
-  padding: 0rem 3rem 0rem 3rem;
+  padding: 0rem 5rem 0rem 5rem;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-row-gap: 3rem;
   justify-items: center;
@@ -552,6 +551,7 @@ li {
 
 .image-array {
   height: 45vh;
+  width: 100%;
   cursor: pointer;
   object-fit: cover;
   display: block;
@@ -568,7 +568,7 @@ li {
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .project h2 {
@@ -653,14 +653,6 @@ li {
   color: white;
 }
 
-.learning {
-  padding: 5rem 0rem 0rem 0rem;
-  color: white;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 2.5rem;
-}
-
 .gallery {
   padding: 3rem;
   color: white;
@@ -673,7 +665,7 @@ li {
   display: block;
   text-align: center;
   position: absolute;
-  right: 43.5%;
+  right: 40.8%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
@@ -685,13 +677,9 @@ li {
     height: 30vh;
     width: 100%;
   }
-  .learning {
-    font-size: 2rem;
-    padding: 3rem;
-    margin-top: 5rem;
-  }
   .learnt {
     display: block;
+    padding-top: 8rem;
   }
   .learnt-style h3 {
     font-size: 1.9rem;
@@ -870,7 +858,6 @@ form button {
 }
 
 /* Footer Section */
-
 footer {
   min-height: 10vh;
   display: flex;
@@ -941,7 +928,7 @@ footer h3 {
     font-size: 1.6rem;
   }
   #link-btn {
-    right: 46%;
+    right: 44%;
   }
   .learnt-style h3 {
     font-size: 2.5rem;
@@ -963,5 +950,10 @@ footer h3 {
 
   form label {
     font-size: 1.2rem;
+  }
+  .image-container {
+    padding: 0rem 5rem 0rem 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-row-gap: 4rem;
   }
 }

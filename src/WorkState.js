@@ -1,9 +1,8 @@
 // Main images for website
-// import comingSoon from "./images/comingsoon.jpg";
+import comingSoon from "./images/comingsoon.jpg";
 // import gymstagram from "./images/gymstagram.jpg";
-// import movies from "./images/movies.jpg";
-// import todolist from "./images/todolist.jpg";
 // import musicplayer from "./images/musicplayer.jpg";
+import gaming from "./images/gaming.jpg";
 import githubfinder from "./images/githubfinder.jpg";
 import portfolio from "./images/portfolio.jpg";
 // Carousel images for portfolio
@@ -20,6 +19,13 @@ import searchName from "./images/github-finder/searchingname.jpeg";
 import searchedAccount from "./images/github-finder/searchedaccount.jpeg";
 import profile from "./images/github-finder/profile.jpeg";
 import about from "./images/github-finder/about.jpeg";
+// Carousel Images for Gaming App
+import upcoming from "./images/gaming-app/upcoming.png";
+import popular from "./images/gaming-app/popular.png";
+import newgames from "./images/gaming-app/new.png";
+import searchinggames from "./images/gaming-app/searching.png";
+import searched from "./images/gaming-app/searched.png";
+import removesearch from "./images/gaming-app/removesearch.png";
 
 export const WorkState = () => {
   return [
@@ -104,6 +110,126 @@ export const WorkState = () => {
         },
       ],
     },
+    {
+      title: "Games App",
+      name: "KR Games",
+      description:
+        "This was another project involving working with an API, this time using a keyless API to pull data from rawg.io to display information about all types of games that have been or are due to be released. This was also the first time I properly started using Redux for top level state management, while it was also quite confusing to begin with, it is very similar to the Context API I have also used previously, which I am starting to become more confident with every new project I undertake, so I am confident I will also grasp Redux fully soon enough. Below are some images showing the App, from 'upcoming', 'popular' and 'new' games, to being able to search for games and remove the search by clicking my logo in the top left corner.",
+      mainImg: gaming,
+      url: "/projects/gaming-app",
+      id: "3",
+      buttonUrl: "https://kr-games-app.netlify.app",
+      learnt: [
+        {
+          id: "1",
+          title: "Redux",
+          description:
+            "My first time working with Redux using Actions and Reducers",
+        },
+        {
+          id: "2",
+          title: "Styled Components",
+          description: "My first time using styled components",
+        },
+        {
+          id: "3",
+          title: "Working with API's",
+          description:
+            "Another project working with API's to try familaries myself",
+        },
+      ],
+      pictures: [
+        {
+          id: "3",
+          alt: "Gaming App Images",
+          image: upcoming,
+          image1: popular,
+          image2: newgames,
+          image3: searchinggames,
+          image4: searched,
+          image5: removesearch,
+        },
+      ],
+    },
+    {
+      title: "GymHub (MERN)",
+      name: "GymHub",
+      description:
+        "I will update this description once I finish this project fully, which will be very soon.",
+      mainImg: comingSoon,
+      url: "/projects/gymhub",
+      id: "4",
+      buttonUrl: "",
+      learnt: [
+        {
+          id: "1",
+          title: " ",
+          description: "coming soon",
+        },
+        {
+          id: "2",
+          title: " ",
+          description: "coming soon",
+        },
+        {
+          id: "3",
+          title: " ",
+          description: "coming soon",
+        },
+      ],
+      pictures: [
+        {
+          id: "4",
+          alt: "GymHub Images",
+          image: comingSoon,
+          image1: comingSoon,
+          image2: comingSoon,
+          image3: comingSoon,
+          image4: comingSoon,
+          image5: comingSoon,
+        },
+      ],
+    },
+    {
+      title: "IT Logger (PERN)",
+      name: "IT Logger",
+      description:
+        "This will also be updated upon completion, which will be soon.",
+      mainImg: comingSoon,
+      url: "/projects/it-logger",
+      id: "5",
+      buttonUrl: "",
+      learnt: [
+        {
+          id: "1",
+          title: " ",
+          description: "coming soon",
+        },
+        {
+          id: "2",
+          title: " ",
+          description: "coming soon",
+        },
+        {
+          id: "3",
+          title: " ",
+          description: "coming soon",
+        },
+      ],
+      pictures: [
+        {
+          id: "5",
+          alt: "IT Logger Images",
+          image: comingSoon,
+          image1: comingSoon,
+          image2: comingSoon,
+          image3: comingSoon,
+          image4: comingSoon,
+          image5: comingSoon,
+        },
+      ],
+    },
+
     // {
     //   title: "Music Player",
     //   name: "KR Music",
@@ -112,7 +238,7 @@ export const WorkState = () => {
     //   mainImg: musicplayer,
     //   url: "/projects/music-player",
     //   buttonUrl: "",
-    //   id: "3",
+    //   id: "6",
     //   learnt: [
     //     {
     //       id: "1",
@@ -134,122 +260,8 @@ export const WorkState = () => {
     //   ],
     //   pictures: [
     //     {
-    //       id: "3",
-    //       alt: "Music Player Images",
-    //       image: comingSoon,
-    //       image1: comingSoon,
-    //       image2: comingSoon,
-    //       image3: comingSoon,
-    //       image4: comingSoon,
-    //       image5: comingSoon,
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "Movie API",
-    //   name: "KR Movies",
-    //   description:
-    //     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autmolestiae qui omnis tenetur, perspiciatis nobis nemo accusamus,eaque delectus nulla, beatae doloribus magnam porro! orem ipsum dolor sit amet consectetur adipisicing elit. Quos minima tempore quas, reprehenderit consequuntur quidem ullam adipisci ex tempora optio hic inventore, nulla iusto itaque porro ab repellat delectus. Ut ipsam ullam assumenda dicta? Odit, repudiandae eum dolore rem laboriosam est laborum maxime, delectus natus alias ullam, facilis culpa nesciunt!",
-    //   mainImg: movies,
-    //   url: "/projects/movie-api",
-    //   id: "4",
-    //   learnt: [
-    //     {
-    //       id: "1",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "2",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "3",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //   ],
-    //   pictures: [
-    //     {
-    //       id: "4",
-    //       alt: "Movies Api Images",
-    //       image: comingSoon,
-    //       image1: comingSoon,
-    //       image2: comingSoon,
-    //       image3: comingSoon,
-    //       image4: comingSoon,
-    //       image5: comingSoon,
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "MERN Project",
-    //   name: "Gymstagram",
-    //   description:
-    //     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autmolestiae qui omnis tenetur, perspiciatis nobis nemo accusamus,eaque delectus nulla, beatae doloribus magnam porro! orem ipsum dolor sit amet consectetur adipisicing elit. Quos minima tempore quas, reprehenderit consequuntur quidem ullam adipisci ex tempora optio hic inventore, nulla iusto itaque porro ab repellat delectus. Ut ipsam ullam assumenda dicta? Odit, repudiandae eum dolore rem laboriosam est laborum maxime, delectus natus alias ullam, facilis culpa nesciunt!",
-    //   mainImg: gymstagram,
-    //   url: "/projects/mern-project",
-    //   id: "5",
-    //   learnt: [
-    //     {
-    //       id: "1",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "2",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "3",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //   ],
-    //   pictures: [
-    //     {
-    //       id: "5",
-    //       alt: "MERN Images",
-    //       image: comingSoon,
-    //       image1: comingSoon,
-    //       image2: comingSoon,
-    //       image3: comingSoon,
-    //       image4: comingSoon,
-    //       image5: comingSoon,
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: "To-Do List",
-    //   name: "KR To-Do",
-    //   description:
-    //     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut autmolestiae qui omnis tenetur, perspiciatis nobis nemo accusamus,eaque delectus nulla, beatae doloribus magnam porro! orem ipsum dolor sit amet consectetur adipisicing elit. Quos minima tempore quas, reprehenderit consequuntur quidem ullam adipisci ex tempora optio hic inventore, nulla iusto itaque porro ab repellat delectus. Ut ipsam ullam assumenda dicta? Odit, repudiandae eum dolore rem laboriosam est laborum maxime, delectus natus alias ullam, facilis culpa nesciunt!",
-    //   mainImg: todolist,
-    //   url: "/projects/to-do-list",
-    //   id: "6",
-    //   learnt: [
-    //     {
-    //       id: "1",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "2",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "3",
-    //       title: " ",
-    //       description: "coming soon",
-    //     },
-    //   ],
-    //   pictures: [
-    //     {
     //       id: "6",
-    //       alt: "To-do List Images",
+    //       alt: "Music Player Images",
     //       image: comingSoon,
     //       image1: comingSoon,
     //       image2: comingSoon,

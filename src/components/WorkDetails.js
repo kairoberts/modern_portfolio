@@ -50,11 +50,10 @@ const WorkDetails = ({ working }) => {
                 className="buttons"
                 id="link-btn"
               >
-                Visit Page
+                {work.buttonUrl === "" ? "Unavailable" : "Visit Website"}
               </a>
             </div>
           </div>
-          <h2 className="learning">What Did I Learn?</h2>
           <div className="learnt">
             {work.learnt.map((learnt) => (
               <Learnt

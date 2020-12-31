@@ -9,6 +9,7 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import { SiFlask } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
 import ScrollTop from "../components/ScrollTop";
 import Wave from "./Wave";
 
@@ -29,11 +30,11 @@ const About = () => {
             I am a 23 year old Computer Science Graduate from Newcastle upon
             Tyne, England. I pride myself on hard work and always aiming to
             improve my skill set. I am currently in the process of teaching
-            myself React, I am learning how to use things such as const, let,
-            mapping, React Hooks, useState, useEffect, props, useRef, React
-            Router and more within components, as well as Axios to work with
-            APIs, PropTypes to debug my code and eventually, state management
-            through useContext and Redux.
+            myself React, where I am learning how to use things such as mapping,
+            React Hooks, useState, useEffect, props, useRef, React Router and
+            more within components. As well as Axios and Fetch to work with
+            APIs, PropTypes to debug my code and top level state management
+            through the Context API and Redux.
           </p>
           <div className="skills-container">
             <h3>My Skills:</h3>
@@ -56,6 +57,10 @@ const About = () => {
             <div className="skill">
               <FaReact size={50} />
               <p>React</p>
+            </div>
+            <div className="skill">
+              <FaNode size={50} />
+              <p>Node</p>
             </div>
             <div className="skill">
               <BsFillBootstrapFill size={50} />
