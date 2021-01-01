@@ -20,12 +20,12 @@ import searchedAccount from "./images/github-finder/searchedaccount.jpeg";
 import profile from "./images/github-finder/profile.jpeg";
 import about from "./images/github-finder/about.jpeg";
 // Carousel Images for Gaming App
-import upcoming from "./images/gaming-app/upcoming.png";
-import popular from "./images/gaming-app/popular.png";
-import newgames from "./images/gaming-app/new.png";
-import searchinggames from "./images/gaming-app/searching.png";
+import homepage from "./images/gaming-app/homepage.png";
+import expanded from "./images/gaming-app/expanded.png";
+import gallery from "./images/gaming-app/gallery.png";
+import searchingGames from "./images/gaming-app/searching.png";
 import searched from "./images/gaming-app/searched.png";
-import removesearch from "./images/gaming-app/removesearch.png";
+import clearSearch from "./images/gaming-app/clearsearch.png";
 
 export const WorkState = () => {
   return [
@@ -114,7 +114,7 @@ export const WorkState = () => {
       title: "Games App",
       name: "KR Games",
       description:
-        "This was another project involving working with an API, this time using a keyless API to pull data from rawg.io to display information about all types of games that have been or are due to be released. This was also the first time I properly started using Redux for top level state management, while it was also quite confusing to begin with, it is very similar to the Context API I have also used previously, which I am starting to become more confident with every new project I undertake, so I am confident I will also grasp Redux fully soon enough. Below are some images showing the App, from 'upcoming', 'popular' and 'new' games, to being able to search for games and remove the search by clicking my logo in the top left corner.",
+        "This was another project involving working with an API, this time using a keyless API to pull data from rawg.io to display information about all types of games that have been or are due to be released. This was also the first time I properly started using Redux for top level state management, while it was also quite confusing to begin with, it is very similar to the Context API I have also used previously, which I am starting to become more confident with every new project I undertake, so I am confident I will also grasp Redux fully soon enough. Below are some images from the App, showing 'Upcoming Games' and how games are able to be expanded for more information. You can also search for games as well and clear the searched games by clicking onto my logo to reset the page.",
       mainImg: gaming,
       url: "/projects/gaming-app",
       id: "3",
@@ -142,12 +142,12 @@ export const WorkState = () => {
         {
           id: "3",
           alt: "Gaming App Images",
-          image: upcoming,
-          image1: popular,
-          image2: newgames,
-          image3: searchinggames,
+          image: homepage,
+          image1: expanded,
+          image2: gallery,
+          image3: searchingGames,
           image4: searched,
-          image5: removesearch,
+          image5: clearSearch,
         },
       ],
     },
