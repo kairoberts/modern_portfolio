@@ -16,12 +16,11 @@ import MobileMenu from "./components/MobileMenu";
 
 function App() {
   const [working] = useState(WorkState);
-  const [menuStatus, setMenuStatus] = useState(false);
 
   return (
     <div className="App">
-      <Nav menuStatus={menuStatus} setMenuStatus={setMenuStatus} />
-      <MobileMenu menuStatus={menuStatus} setMenuStatus={setMenuStatus} />
+      <Nav />
+      <MobileMenu />
       <Switch>
         <Route exact path="/">
           <Banner />
@@ -40,6 +39,7 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+          {/* <Footer /> */}
         </Route>
         <Route component={Error} />
       </Switch>

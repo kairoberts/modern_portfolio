@@ -5,6 +5,7 @@ import comingSoon from "./images/comingsoon.jpg";
 import gaming from "./images/gaming.jpg";
 import githubfinder from "./images/githubfinder.jpg";
 import portfolio from "./images/portfolio.jpg";
+import gymhub from "./images/gymhub.jpg";
 // Carousel images for portfolio
 import aboutme from "./images/old-portfolio/aboutme.jpeg";
 import clients from "./images/old-portfolio/clients.jpeg";
@@ -26,6 +27,13 @@ import gallery from "./images/gaming-app/gallery.png";
 import searchingGames from "./images/gaming-app/searching.png";
 import searched from "./images/gaming-app/searched.png";
 import clearSearch from "./images/gaming-app/clearsearch.png";
+// Carousel Images for GymHub
+import gymhubhome from "./images/gymhub/homepage.png";
+import register from "./images/gymhub/register.png";
+import loggingin from "./images/gymhub/loggingin.png";
+import loggedin from "./images/gymhub/loggedin.png";
+import workouts from "./images/gymhub/myworkouts.png";
+import searchworkouts from "./images/gymhub/searchworkout.png";
 
 export const WorkState = () => {
   return [
@@ -38,6 +46,7 @@ export const WorkState = () => {
       id: "1",
       url: "/projects/first-portfolio",
       buttonUrl: "https://kr-old-portfolio.netlify.app",
+      githubUrl: "https://github.com/kairoberts/react_portfolio",
       learnt: [
         {
           id: "1",
@@ -79,6 +88,7 @@ export const WorkState = () => {
       id: "2",
       url: "/projects/github-finder",
       buttonUrl: "https://kr-github-finder.netlify.app",
+      githubUrl: "https://github.com/kairoberts/github_finder",
       learnt: [
         {
           id: "1",
@@ -119,6 +129,7 @@ export const WorkState = () => {
       url: "/projects/gaming-app",
       id: "3",
       buttonUrl: "https://kr-games-app.netlify.app",
+      githubUrl: "https://github.com/kairoberts/games_app",
       learnt: [
         {
           id: "1",
@@ -152,46 +163,47 @@ export const WorkState = () => {
       ],
     },
     {
-      title: "GymHub (MERN)",
+      title: "GymHub - MERN",
       name: "GymHub",
       description:
-        "I will update this description once I finish this project fully, which will be very soon.",
-      mainImg: comingSoon,
+        "I went for the MERN stack on this project, as I wanted to try improve my back-end knowledge alongside my front-end. The goal of this project is to allow users to keep track of their workouts, as often people forget them. It has a complete login system and all passwords are hashed in the database. Each individual user can create their own workout, eventually creating a full routine, which also gets stored to a seperate cluster in the database. Each workout routine is only accessible to the account that has logged in, as users are granted a token for authentication, allowing each account to create their own unique routines. Each routine can also be updated or deleted as well as being able to search through them. If you do not wish to create an account, feel free to login with 'testaccount@hotmail.co.uk' as the email and 'testing' as the password. When visiting the website please allow a few moments for heroku to awaken the app, as it sends inactive websites to sleep, meaning it takes longer to load.",
+      mainImg: gymhub,
       url: "/projects/gymhub",
       id: "4",
-      buttonUrl: "",
+      buttonUrl: "http://kr-gymhub.herokuapp.com",
+      githubUrl: "",
       learnt: [
         {
           id: "1",
-          title: " ",
-          description: "coming soon",
+          title: "Redux",
+          description: "Further improved my Redux knowledge",
         },
         {
           id: "2",
-          title: " ",
-          description: "coming soon",
+          title: "Node",
+          description: "This was my first time using Node as my back-end",
         },
         {
           id: "3",
-          title: " ",
-          description: "coming soon",
+          title: "MongoDB",
+          description: "My first time using a NoSQL database",
         },
       ],
       pictures: [
         {
           id: "4",
           alt: "GymHub Images",
-          image: comingSoon,
-          image1: comingSoon,
-          image2: comingSoon,
-          image3: comingSoon,
-          image4: comingSoon,
-          image5: comingSoon,
+          image: gymhubhome,
+          image1: register,
+          image2: loggingin,
+          image3: loggedin,
+          image4: workouts,
+          image5: searchworkouts,
         },
       ],
     },
     {
-      title: "IT Logger (PERN)",
+      title: "IT Logger - PERN",
       name: "IT Logger",
       description:
         "This will also be updated upon completion, which will be soon.",
@@ -199,20 +211,21 @@ export const WorkState = () => {
       url: "/projects/it-logger",
       id: "5",
       buttonUrl: "",
+      githubUrl: "",
       learnt: [
         {
           id: "1",
-          title: " ",
+          title: "",
           description: "coming soon",
         },
         {
           id: "2",
-          title: " ",
+          title: "",
           description: "coming soon",
         },
         {
           id: "3",
-          title: " ",
+          title: "",
           description: "coming soon",
         },
       ],
@@ -238,6 +251,7 @@ export const WorkState = () => {
     //   mainImg: musicplayer,
     //   url: "/projects/music-player",
     //   buttonUrl: "",
+    //   githubUrl: "",
     //   id: "6",
     //   learnt: [
     //     {

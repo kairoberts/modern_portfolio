@@ -8,7 +8,6 @@ import { useLocation, Link } from "react-router-dom";
 const Nav = () => {
   const [nav, setNav] = useState(false);
   const [button, setButton] = useState(true);
-
   const { pathname } = useLocation();
 
   const changeBackground = () => {

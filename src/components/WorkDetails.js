@@ -43,15 +43,37 @@ const WorkDetails = ({ working }) => {
             <img src={work.mainImg} alt={work.title} className="detail-image" />
             <div className="details-container">
               <p className="content-message">{work.description}</p>
-              <a
-                href={work.buttonUrl}
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                className="buttons"
-                id="link-btn"
-              >
-                {work.buttonUrl === "" ? "Unavailable" : "Visit Website"}
-              </a>
+              <div className="btncontainer">
+                <a
+                  href={work.buttonUrl}
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  className="buttons"
+                >
+                  {work.buttonUrl === "" ? (
+                    <a href="#!" style={{ color: "red" }}>
+                      Unavailable
+                    </a>
+                  ) : (
+                    "Visit Website"
+                  )}
+                </a>
+                <br className="mobile-break" />
+                <a
+                  href={work.githubUrl}
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  className="buttons"
+                >
+                  {work.githubUrl === "" ? (
+                    <a href="#!" style={{ color: "red" }}>
+                      Private Repo
+                    </a>
+                  ) : (
+                    "Visit GitHub"
+                  )}
+                </a>
+              </div>
             </div>
           </div>
           <div className="learnt">

@@ -45,12 +45,6 @@ const Banner = () => {
             </a>
           </motion.div>
         </div>
-        <div className="hide">
-          <motion.h3 variants={titleAnimation} className="still-in-dev">
-            Please note this website is still in development so some features
-            aren't finished
-          </motion.h3>
-        </div>
       </div>
       <ScrollLink to="about" spy={true} smooth={true} duration={700}>
         <div className="scroll-arrow">

@@ -277,6 +277,11 @@ li {
   cursor: pointer;
 }
 
+.still-in-dev {
+  color: white;
+  text-align: center;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .buttons {
     display: block;
@@ -297,7 +302,7 @@ li {
     display: none;
   }
   .still-in-dev {
-    display: none;
+    font-size: 0.8rem;
   }
 }
 
@@ -661,11 +666,11 @@ li {
   font-size: 2.5rem;
 }
 
-#link-btn {
+.btncontainer {
   display: block;
-  text-align: center;
-  position: absolute;
-  right: 40.8%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
@@ -690,10 +695,8 @@ li {
   .gallery {
     font-size: 2rem;
   }
-  #link-btn {
-    left: 30%;
-    margin-top: 2rem;
-    width: 40%;
+  .btncontainer {
+    text-align: center;
   }
 }
 
@@ -710,6 +713,7 @@ li {
 
 .carousel-slides {
   min-width: 100%;
+  height: auto;
   transition: all 1s ease;
   position: relative;
 }
@@ -880,10 +884,7 @@ footer h3 {
 
 /* Error Message */
 .error {
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translate(28%, -50%);
+  transform: translate(0%, 100%);
   text-align: center;
 }
 
@@ -936,18 +937,13 @@ footer h3 {
   .learnt-style p {
     font-size: 1.2rem;
   }
-  .form-container {
-    min-height: 90vh;
-  }
   form input {
     width: 100%;
-    height: 3rem;
+    height: 2.1rem;
   }
-
   form textarea {
     min-height: 25vh;
   }
-
   form label {
     font-size: 1.2rem;
   }
