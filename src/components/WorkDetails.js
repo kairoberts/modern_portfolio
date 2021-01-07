@@ -42,7 +42,7 @@ const WorkDetails = ({ working }) => {
           <div className="details">
             <img src={work.mainImg} alt={work.title} className="detail-image" />
             <div className="details-container">
-              <p className="content-message">{work.description}</p>
+              <p>{work.description}</p>
               <div className="btncontainer">
                 <a
                   href={work.buttonUrl}
