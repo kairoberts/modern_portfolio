@@ -205,8 +205,7 @@ export const WorkState = () => {
     {
       title: "IT Logger - PERN",
       name: "IT Logger",
-      description:
-        "This will also be updated upon completion, which will be soon.",
+      description: "This will be updated upon completion, which will be soon.",
       mainImg: comingSoon,
       url: "/projects/it-logger",
       id: "5",
