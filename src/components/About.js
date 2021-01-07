@@ -1,7 +1,7 @@
 import React from "react";
 import kai from "../images/kairob.png";
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
+import { DiCss3, DiMongodb } from "react-icons/di";
 import { FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
@@ -73,6 +73,10 @@ const About = () => {
             <div className="skill">
               <SiMysql size={70} />
               <p>MySQL</p>
+            </div>
+            <div className="skill">
+              <DiMongodb size={55} />
+              <p>MongoDB</p>
             </div>
             <div className="skill">
               <FaGit size={50} />
