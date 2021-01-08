@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import emailjs from "emailjs-com";
+import AlertContext from "../context/alertContext";
+import Alert from "./Alert";
 
-const contactForm = () => {
-  function sendEmail(e) {
+const ContactForm = () => {
+  const alertContext = useContext(AlertContext);
+  const [text] = useState("");
+
+  const onSubmit = (e) => {
     e.preventDefault();
+    if (text === "") {
+      alertContext.setAlert("Message Sent!");
+    }
     emailjs
       .sendForm(
         "outlook",
@@ -20,23 +28,35 @@ const contactForm = () => {
         }
       );
     e.target.reset();
-  }
+  };
 
   return (
-    <form onSubmit={sendEmail}>
+    <form onSubmit={onSubmit}>
       <div className="form-container">
         <label htmlFor="name">Name:</label>
-        <input id="name" type="text" autoComplete="off" required />
+        <input id="name" type="text" autoComplete="off" name="name" required />
 
         <label htmlFor="email">Email:</label>
-        <input id="email" type="text" autoComplete="off" required />
+        <input
+          id="email"
+          type="text"
+          autoComplete="off"
+          name="email"
+          required
+        />
 
         <label htmlFor="subject">Subject:</label>
-        <input id="subject" type="text" autoComplete="off" required />
+        <input
+          id="subject"
+          type="text"
+          autoComplete="off"
+          name="subject"
+          required
+        />
 
         <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-
+        <textarea id="message" name="message" required />
+        <Alert />
         <div className="btn-container">
           <button className="buttons" id="contact-btn" type="submit">
             Send Message
@@ -47,4 +67,4 @@ const contactForm = () => {
   );
 };
 
-export default contactForm;
+export default ContactForm;

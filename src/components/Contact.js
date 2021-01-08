@@ -14,10 +14,6 @@ const Contact = () => {
           variants={lineAnimation}
           className="question-line"
         ></motion.div>
-        <h3 className="still-in-dev">
-          Please note this website is still in development so this form does not
-          work yet
-        </h3>
         <ContactForm />
       </div>
     </motion.section>

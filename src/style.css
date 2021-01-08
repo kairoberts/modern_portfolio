@@ -39,8 +39,8 @@ body {
   background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
   width: 0%;
   position: absolute;
-  bottom: -50%;
-  left: 67%;
+  bottom: -25%;
+  left: 65%;
 }
 
 a {
@@ -277,7 +277,7 @@ li {
   cursor: pointer;
 }
 
-.still-in-dev {
+.contact-message {
   color: white;
   text-align: center;
 }
@@ -301,8 +301,8 @@ li {
   .socials {
     display: none;
   }
-  .still-in-dev {
-    font-size: 0.8rem;
+  .contact-message {
+    font-size: 0.9rem;
   }
 }
 
@@ -951,5 +951,25 @@ footer h3 {
     padding: 0rem 5rem 0rem 5rem;
     grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     grid-row-gap: 4rem;
+  }
+}
+
+.alert {
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: greenyellow;
+}
+
+.alert-icon {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .alert {
+    left: 28%;
   }
 }

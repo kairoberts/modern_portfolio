@@ -33,7 +33,7 @@ const About = () => {
             myself React, where I am learning how to use things such as mapping,
             React Hooks, useState, useEffect, props, useRef, React Router and
             more within components. As well as Axios and Fetch to work with
-            APIs, PropTypes to debug my code and top level state management
+            APIs, PropTypes to debug my code and app level state management
             through the Context API and Redux.
           </p>
           <div className="skills-container">
