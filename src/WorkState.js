@@ -203,7 +203,7 @@ export const WorkState = () => {
       ],
     },
     {
-      title: "IT Logger - PERN",
+      title: "IT Logger - MERN",
       name: "IT Logger",
       description: "This will be updated upon completion, which will be soon.",
       mainImg: comingSoon,
