@@ -1,5 +1,5 @@
 // Main images for website
-import comingSoon from "./images/comingsoon.jpg";
+// import comingSoon from "./images/comingsoon.jpg";
 // import gymstagram from "./images/gymstagram.jpg";
 // import musicplayer from "./images/musicplayer.jpg";
 import gaming from "./images/gaming.jpg";
