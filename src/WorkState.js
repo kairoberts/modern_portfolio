@@ -202,45 +202,45 @@ export const WorkState = () => {
         },
       ],
     },
-    {
-      title: "IT Logger - MERN",
-      name: "IT Logger",
-      description: "This will be updated upon completion, which will be soon.",
-      mainImg: comingSoon,
-      url: "/projects/it-logger",
-      id: "5",
-      buttonUrl: "",
-      githubUrl: "",
-      learnt: [
-        {
-          id: "1",
-          title: "",
-          description: "coming soon",
-        },
-        {
-          id: "2",
-          title: "",
-          description: "coming soon",
-        },
-        {
-          id: "3",
-          title: "",
-          description: "coming soon",
-        },
-      ],
-      pictures: [
-        {
-          id: "5",
-          alt: "IT Logger Images",
-          image: comingSoon,
-          image1: comingSoon,
-          image2: comingSoon,
-          image3: comingSoon,
-          image4: comingSoon,
-          image5: comingSoon,
-        },
-      ],
-    },
+    // {
+    //   title: "IT Logger - MERN",
+    //   name: "IT Logger",
+    //   description: "This will be updated upon completion, which will be soon.",
+    //   mainImg: comingSoon,
+    //   url: "/projects/it-logger",
+    //   id: "5",
+    //   buttonUrl: "",
+    //   githubUrl: "",
+    //   learnt: [
+    //     {
+    //       id: "1",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //     {
+    //       id: "2",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //     {
+    //       id: "3",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //   ],
+    //   pictures: [
+    //     {
+    //       id: "5",
+    //       alt: "IT Logger Images",
+    //       image: comingSoon,
+    //       image1: comingSoon,
+    //       image2: comingSoon,
+    //       image3: comingSoon,
+    //       image4: comingSoon,
+    //       image5: comingSoon,
+    //     },
+    //   ],
+    // },
 
     // {
     //   title: "Music Player",
