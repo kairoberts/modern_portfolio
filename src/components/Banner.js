@@ -21,7 +21,7 @@ const Banner = () => {
       <div className="title">
         <div className="hide">
           <motion.h2 variants={titleAnimation}>
-            Aspiring Full Stack Developer
+            Computer Science Graduate
           </motion.h2>
         </div>
         <div className="hide">
