@@ -3,7 +3,7 @@ import kai from "../images/kairob.png";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { FaSass } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
+import { IoLogoJavascript, IoLogoPython } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { SiFlask } from "react-icons/si";
@@ -29,12 +29,12 @@ const About = () => {
           <p className="content-message">
             I am a 23 year old Computer Science Graduate from Newcastle upon
             Tyne, England. I pride myself on hard work and always aiming to
-            improve my skill set. I am currently in the process of teaching
-            myself React, where I am learning how to use things such as mapping,
-            React Hooks, useState, useEffect, props, useRef, React Router and
-            more within components. As well as Axios and Fetch to work with
-            APIs, PropTypes to debug my code and app level state management
-            through the Context API and Redux.
+            improve my skill set. Since graduating University I have made it my
+            goal to keep up to date with current technologies in order to stay
+            relevant within the industry. I am looking for employment in the
+            following areas: Web Development, Python Programming, IT Analyst,
+            Software Sales and IT Help Desk. If you would like to read more
+            about my skills, download my CV above.
           </p>
           <div className="skills-container">
             <h3>My Skills:</h3>
@@ -69,6 +69,10 @@ const About = () => {
             <div className="skill">
               <SiFlask size={55} />
               <p>Python Flask</p>
+            </div>
+            <div className="skill">
+              <IoLogoPython size={55} />
+              <p>Python</p>
             </div>
             <div className="skill">
               <SiMysql size={70} />

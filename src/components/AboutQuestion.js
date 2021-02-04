@@ -12,26 +12,27 @@ const AboutQuestions = () => {
             <div className="answer">
               <p>
                 I will make a great fit into any team as I have good
-                communication skills and can get along with almost anyone. I am
-                a firm believer in working hard in order to achieve what you
-                want from life. I would consider myself a go-getter who takes
-                pride in the work I do, so I can be relied on to complete high
-                quality projects. I can work effectively within teams or alone,
-                so won't have any issues regarding how I may need to work.
+                communication skills and like to think I can get along with
+                anyone. I am a firm believer in working hard in order to achieve
+                what you want from life and won't slack off. I would consider
+                myself a go-getter who takes pride in the work I do, so I can be
+                relied on to complete high quality projects. I can work
+                effectively within teams or alone, so won't have any issues
+                regarding how I may need to work.
               </p>
             </div>
           </Toggle>
 
-          <Toggle title="Why Web Dev?">
+          <Toggle title="What Technologies?">
             <div className="answer">
               <p>
-                I had always enjoyed my Web Development modules during Uni,
-                however, since I had other modules to complete, I could never
-                fully immerse myself in it as I was always preoccupied with
-                other tasks. It wasn't until I left Uni that my interest peaked,
-                what was first a hobby soon turned into a passion and now I
-                spend everyday behind a screen trying to improve my skillset
-                with the aim to make it my career.
+                Since graduating University I have made it my goal to learn new
+                technologies so I can stay relevant in the industry, so far I
+                have improved on my JavaScript programming, learned the ReactJS
+                library, touched on NodeJS, improved my Python programming and
+                some of MongoDB NoSQL. I plan to eventually move onto the VueJS
+                framework as well as learning PHP and PostgreSQL among other
+                technologies.
               </p>
             </div>
           </Toggle>
@@ -39,13 +40,13 @@ const AboutQuestions = () => {
           <Toggle title="Goals In Life?">
             <div className="answer">
               <p>
-                My main goal in life at the moment is to become a Full Stack
-                Developer in charge of a team, working on all areas of the
-                projects I undertake. I am currently in the process of improving
-                my back-end knowledge, starting with Node.js and then eventually
-                Python and/or PHP, as I aim to be confident in all areas of Web
-                Development, in return allowing me to become an overall higher
-                quality dev.
+                My main goals in life right now are to continue
+                learning/improving on new technologies in the hopes of one day
+                becoming a specialist within them, as well as becoming employed
+                within a field that I desire to work in, justifying all my hard
+                work throughout University. My long term vision would be to be
+                in charge of my own team managing staff and being the project
+                manager for the tasks I undertake.
               </p>
             </div>
           </Toggle>

@@ -363,7 +363,7 @@ li {
 }
 
 .skills-container {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -373,7 +373,7 @@ li {
 
 .skill {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .skill p {
@@ -444,8 +444,8 @@ li {
 
 /* About Questions */
 .about-me {
-  min-height: 85vh;
-  margin-top: 5%;
+  min-height: auto;
+  margin: 8% 0% 5% 0%;
 }
 
 .question {
@@ -456,7 +456,7 @@ li {
 }
 
 .answer {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   color: white;
 }
 
@@ -466,7 +466,7 @@ li {
 }
 
 .question-h2 {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.8rem;
   font-weight: lighter;
   cursor: pointer;
