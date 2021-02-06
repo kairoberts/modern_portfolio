@@ -32,9 +32,9 @@ const About = () => {
             improve my skill set. Since graduating University I have made it my
             goal to keep up to date with current technologies in order to stay
             relevant within the industry. I am looking for employment in the
-            following areas: Web Development, Python Programming, IT Analyst,
-            Software Sales and IT Help Desk. If you would like to read more
-            about my skills, download my CV above.
+            following areas: IT Analyst, IT Help Desk, Web Development, Python
+            Programming and Software Sales. If you would like to read more about
+            my skills, download my CV above.
           </p>
           <div className="skills-container">
             <h3>My Skills:</h3>

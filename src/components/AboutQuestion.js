@@ -30,9 +30,9 @@ const AboutQuestions = () => {
                 technologies so I can stay relevant in the industry, so far I
                 have improved on my JavaScript programming, learned the ReactJS
                 library, touched on NodeJS, improved my Python programming and
-                some of MongoDB NoSQL. I plan to eventually move onto the VueJS
-                framework as well as learning PHP and PostgreSQL among other
-                technologies.
+                some of MongoDB NoSQL. My next goal is to improve on my
+                networking knowledge as I would like to potentially go down the
+                Cyber Security route later on in life.
               </p>
             </div>
           </Toggle>
@@ -44,9 +44,10 @@ const AboutQuestions = () => {
                 learning/improving on new technologies in the hopes of one day
                 becoming a specialist within them, as well as becoming employed
                 within a field that I desire to work in, justifying all my hard
-                work throughout University. My long term vision would be to be
-                in charge of my own team managing staff and being the project
-                manager for the tasks I undertake.
+                work throughout University. My long term vision would either be
+                being in charge of my own team, managing staff and being the
+                project manager for the tasks I undertake or becoming an IT
+                consultant helping businesses build and secure their networks.
               </p>
             </div>
           </Toggle>
@@ -57,7 +58,7 @@ const AboutQuestions = () => {
                 <Link to="/contact" style={{ color: "cyan" }}>
                   Contact
                 </Link>{" "}
-                page and fill out the form or simply click my email here at{" "}
+                page and fill out the form or click my email here at{" "}
                 <a
                   href="mailto:kairoberts97@hotmail.co.uk"
                   rel="noreferrer noopener nofollow"

@@ -536,6 +536,11 @@ li {
   text-align: center;
 }
 
+.work-container p {
+  color: white;
+  text-align: center;
+}
+
 #projects {
   min-height: 99vh;
 }
