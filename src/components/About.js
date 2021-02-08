@@ -1,15 +1,9 @@
 import React from "react";
 import kai from "../images/kairob.png";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3, DiMongodb } from "react-icons/di";
-import { FaSass } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoPython } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { BsFillBootstrapFill } from "react-icons/bs";
-import { SiFlask } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { FaGit } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
+import { AiFillHtml5, AiFillDatabase } from "react-icons/ai";
+import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
+import { FaNode, FaNetworkWired, FaSass, FaGit, FaReact } from "react-icons/fa";
+import { SiArduino } from "react-icons/si";
 import ScrollTop from "../components/ScrollTop";
 import Wave from "./Wave";
 
@@ -37,54 +31,46 @@ const About = () => {
             my skills, download my CV above.
           </p>
           <div className="skills-container">
-            <h3>My Skills:</h3>
+            <h3>Areas of Knowledge:</h3>
             <div className="skill">
-              <AiFillHtml5 size={55} />
+              <FaNetworkWired size={50} />
+              <p>Networks</p>
+            </div>
+            <div className="skill">
+              <IoLogoPython size={50} />
+              <p>Python</p>
+            </div>
+            <div className="skill">
+              <AiFillHtml5 size={50} />
               <p>HTML</p>
             </div>
             <div className="skill">
-              <DiCss3 size={55} />
-              <p>CSS</p>
+              <FaSass size={50} />
+              <p>Css/Sass</p>
             </div>
             <div className="skill">
-              <FaSass size={55} />
-              <p>Sass</p>
-            </div>
-            <div className="skill">
-              <IoLogoJavascript size={55} />
+              <IoLogoJavascript size={50} />
               <p>JavaScript</p>
             </div>
             <div className="skill">
               <FaReact size={50} />
-              <p>React</p>
+              <p>ReactJS</p>
             </div>
             <div className="skill">
               <FaNode size={50} />
-              <p>Node</p>
+              <p>NodeJS</p>
             </div>
             <div className="skill">
-              <BsFillBootstrapFill size={50} />
-              <p>Bootstrap</p>
+              <SiArduino size={50} />
+              <p>Arduino</p>
             </div>
             <div className="skill">
-              <SiFlask size={55} />
-              <p>Python Flask</p>
-            </div>
-            <div className="skill">
-              <IoLogoPython size={55} />
-              <p>Python</p>
-            </div>
-            <div className="skill">
-              <SiMysql size={70} />
-              <p>MySQL</p>
-            </div>
-            <div className="skill">
-              <DiMongodb size={55} />
-              <p>MongoDB</p>
+              <AiFillDatabase size={50} />
+              <p>Databases</p>
             </div>
             <div className="skill">
               <FaGit size={50} />
-              <p>Git</p>
+              <p>Version Control</p>
             </div>
           </div>
         </div>

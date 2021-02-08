@@ -1,7 +1,7 @@
 import React from "react";
-import { GiPencilBrush } from "react-icons/gi";
-import { BsCodeSlash } from "react-icons/bs";
-import { VscRocket } from "react-icons/vsc";
+import { GiShakingHands } from "react-icons/gi";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { GiFist } from "react-icons/gi";
 import { BsPen } from "react-icons/bs";
 
 const Design = () => {
@@ -10,22 +10,22 @@ const Design = () => {
       <div className="design-container">
         <div className="design-icons">
           <BsPen size={80} className="design-icon" />
-          <h2>Plan</h2>
+          <h2>Resilient</h2>
         </div>
 
         <div className="design-icons">
-          <GiPencilBrush size={80} className="design-icon" />
-          <h2>Design</h2>
+          <GiShakingHands size={80} className="design-icon" />
+          <h2>Trustworthy</h2>
         </div>
 
         <div className="design-icons">
-          <BsCodeSlash size={80} className="design-icon" />
-          <h2>Develop</h2>
+          <AiOutlineClockCircle size={80} className="design-icon" />
+          <h2>Go-Getter</h2>
         </div>
 
         <div className="design-icons">
-          <VscRocket size={80} className="design-icon" />
-          <h2>Deploy</h2>
+          <GiFist size={80} className="design-icon" />
+          <h2>Motivational</h2>
         </div>
       </div>
     </section>

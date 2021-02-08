@@ -312,7 +312,7 @@ li {
     font-size: 3.2rem;
   }
   .logo {
-    margin-left: -2rem;
+    margin-left: -1.7rem;
   }
 }
 
@@ -369,6 +369,7 @@ li {
 
 .skills-container h3 {
   font-size: 35px;
+  padding-bottom: 0.8rem;
 }
 
 .skill {
@@ -924,7 +925,7 @@ footer h3 {
     font-size: 1.3rem;
   }
   .about-me {
-    min-height: 70vh;
+    min-height: 60vh;
   }
   .details {
     padding: 0rem 8rem 0rem 8rem;

@@ -27,12 +27,12 @@ const AboutQuestions = () => {
             <div className="answer">
               <p>
                 Since graduating University I have made it my goal to learn new
-                technologies so I can stay relevant in the industry, so far I
-                have improved on my JavaScript programming, learned the ReactJS
+                tech so I can stay relevant in the industry, so far I have
+                improved on my JavaScript programming, learned the ReactJS
                 library, touched on NodeJS, improved my Python programming and
-                some of MongoDB NoSQL. My next goal is to improve on my
-                networking knowledge as I would like to potentially go down the
-                Cyber Security route later on in life.
+                some of MongoDB NoSQL. I am now spending my time improving on my
+                networking knowledge and eventually plan to become certified
+                within AWS and other cloud services.
               </p>
             </div>
           </Toggle>
