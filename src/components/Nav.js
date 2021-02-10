@@ -61,7 +61,9 @@ const Nav = () => {
             ></motion.div>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" id="contact">
+              Contact
+            </Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
