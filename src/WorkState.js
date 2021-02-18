@@ -203,55 +203,15 @@ export const WorkState = () => {
       ],
     },
     // {
-    //   title: "IT Logger - MERN",
-    //   name: "IT Logger",
-    //   description: "This will be updated upon completion, which will be soon.",
-    //   mainImg: comingSoon,
-    //   url: "/projects/it-logger",
-    //   id: "5",
-    //   buttonUrl: "",
-    //   githubUrl: "",
-    //   learnt: [
-    //     {
-    //       id: "1",
-    //       title: "",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "2",
-    //       title: "",
-    //       description: "coming soon",
-    //     },
-    //     {
-    //       id: "3",
-    //       title: "",
-    //       description: "coming soon",
-    //     },
-    //   ],
-    //   pictures: [
-    //     {
-    //       id: "5",
-    //       alt: "IT Logger Images",
-    //       image: comingSoon,
-    //       image1: comingSoon,
-    //       image2: comingSoon,
-    //       image3: comingSoon,
-    //       image4: comingSoon,
-    //       image5: comingSoon,
-    //     },
-    //   ],
-    // },
-
-    // {
     //   title: "Music Player",
     //   name: "KR Music",
     //   description:
-    //     "This was my first 'big' project in React, I bought an online course in order to help me along with this project. It gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that set the foundation for my React knowledge as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free mixtapes hosted on their official mixtape platforms.",
+    //     "This was my most JavaScript intensive project, I bought an online course in order to help me along with it and it gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that created the foundation for my React knowledge, as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free downloads hosted on their official platforms.",
     //   mainImg: musicplayer,
     //   url: "/projects/music-player",
     //   buttonUrl: "",
-    //   githubUrl: "",
-    //   id: "6",
+    //   githubUrl: "https://github.com/kairoberts/music_player",
+    //   id: "5",
     //   learnt: [
     //     {
     //       id: "1",
@@ -273,8 +233,47 @@ export const WorkState = () => {
     //   ],
     //   pictures: [
     //     {
-    //       id: "6",
+    //       id: "5",
     //       alt: "Music Player Images",
+    //       image: comingSoon,
+    //       image1: comingSoon,
+    //       image2: comingSoon,
+    //       image3: comingSoon,
+    //       image4: comingSoon,
+    //       image5: comingSoon,
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "IT Logger - MERN",
+    //   name: "IT Logger",
+    //   description: "This will be updated upon completion, which will be soon.",
+    //   mainImg: comingSoon,
+    //   url: "/projects/it-logger",
+    //   id: "6",
+    //   buttonUrl: "",
+    //   githubUrl: "",
+    //   learnt: [
+    //     {
+    //       id: "1",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //     {
+    //       id: "2",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //     {
+    //       id: "3",
+    //       title: "",
+    //       description: "coming soon",
+    //     },
+    //   ],
+    //   pictures: [
+    //     {
+    //       id: "6",
+    //       alt: "IT Logger Images",
     //       image: comingSoon,
     //       image1: comingSoon,
     //       image2: comingSoon,

@@ -40,14 +40,15 @@ const AboutQuestions = () => {
           <Toggle title="Goals In Life?">
             <div className="answer">
               <p>
-                My main goals in life right now are to continue
-                learning/improving on new technologies in the hopes of one day
-                becoming a specialist within them, as well as becoming employed
-                within a field that I desire to work in, justifying all my hard
-                work throughout University. My long term vision would either be
-                being in charge of my own team, managing staff and being the
-                project manager for the tasks I undertake or becoming an IT
-                consultant helping businesses build and secure their networks.
+                My main goals in life right now are to continue learning and
+                improving on new tech and building a solid foundation of
+                knowledge to use in a working environment as well as becoming
+                employed within a field that I desire to work in, justifying all
+                my hard work throughout University. My long term vision would
+                either be being in charge of my own team, managing staff and
+                being the project manager for the tasks I undertake or becoming
+                an IT consultant helping businesses build and secure their
+                networks.
               </p>
             </div>
           </Toggle>
