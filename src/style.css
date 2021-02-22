@@ -61,10 +61,7 @@ li {
 }
 
 .logo {
-  height: 80px;
-  width: 150px;
-  object-fit: cover;
-  cursor: pointer;
+  font-size: 4rem;
   transition: all 0.5s ease;
 }
 
@@ -123,7 +120,7 @@ li {
     transform: scale(1);
   }
   .logo {
-    margin-left: -3rem;
+    margin-left: -0.3rem;
   }
   .logo:hover {
     transform: scale(1);
@@ -151,7 +148,7 @@ li {
     position: fixed;
     left: 0;
     top: 0;
-    margin: 1rem 0rem 0rem 1rem;
+    margin: 1.3rem 0rem 0rem 1rem;
     z-index: 3;
   }
   .menu {
@@ -178,7 +175,6 @@ li {
     bottom: 0;
     left: -1;
   }
-
   .icons {
     margin-left: 2rem;
   }
@@ -310,9 +306,6 @@ li {
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .title h2 {
     font-size: 3.2rem;
-  }
-  .logo {
-    margin-left: -1.7rem;
   }
 }
 
@@ -902,7 +895,6 @@ footer h3 {
 /* Large Screen media queries */
 @media only screen and (min-device-width: 1800px) {
   .logo {
-    margin-top: 0.5rem;
     height: 80px;
     width: 170px;
   }

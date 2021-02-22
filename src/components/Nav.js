@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from "framer-motion";
@@ -36,7 +35,7 @@ const Nav = () => {
       />
       <header className={nav ? "nav active" : "nav"}>
         <Link to="/">
-          <img src={logo} alt="KR Web Development" className="logo" />
+          <p className="logo">K.R</p>
         </Link>
 
         <ul>
