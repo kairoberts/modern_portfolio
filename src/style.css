@@ -549,7 +549,6 @@ li {
 
 .image-container h2 {
   font-weight: lighter;
-  text-align: center;
 }
 
 .image-array {
@@ -559,14 +558,11 @@ li {
   object-fit: cover;
   display: block;
   width: auto;
-}
-
-.project {
-  cursor: pointer;
   transition: all 0.5s ease;
 }
 
-.project:hover {
+.image-array:hover {
+  cursor: pointer;
   transform: scale(1.02);
 }
 
@@ -574,6 +570,7 @@ li {
   padding: 1rem;
   font-size: 1.25rem;
   text-align: left;
+  color: white;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
