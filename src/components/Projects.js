@@ -17,9 +17,6 @@ const Projects = ({ working }) => {
           <ScrollTop />
           <div className="work-container">
             <h2>My Work</h2>
-            <p>
-              Some projects I've completed to keep me busy during my job search
-            </p>
             <motion.div
               variants={lineAnimation}
               className="question-line"

@@ -1,7 +1,7 @@
 // Main images for website
-// import comingSoon from "./images/comingsoon.jpg";
+import comingSoon from "./images/comingsoon.jpg";
 // import gymstagram from "./images/gymstagram.jpg";
-// import musicplayer from "./images/musicplayer.jpg";
+import musicplayer from "./images/musicplayer.jpg";
 import gaming from "./images/gaming.jpg";
 import githubfinder from "./images/githubfinder.jpg";
 import portfolio from "./images/portfolio.jpg";
@@ -163,7 +163,7 @@ export const WorkState = () => {
       ],
     },
     {
-      title: "GymHub - MERN",
+      title: "GymHub",
       name: "GymHub",
       description:
         "I went for the MERN stack on this project, as I wanted to try improve my back-end knowledge alongside my front-end. The goal of this project is to allow users to keep track of their workouts, as often people forget them. It has a complete login system and all passwords are hashed in the database. Each individual user can create their own workout, eventually creating a full routine, which also gets stored to a seperate cluster in the database. Each workout routine is only accessible to the account that has logged in, as users are granted a token for authentication, allowing each account to create their own unique routines. Each routine can also be updated or deleted as well as being able to search through them. If you do not wish to create an account, feel free to login with 'testaccount@hotmail.co.uk' as the email and 'testing' as the password. When visiting the website please allow a few moments for heroku to awaken the app, as it sends inactive websites to sleep, meaning it takes longer to load.",
@@ -202,48 +202,48 @@ export const WorkState = () => {
         },
       ],
     },
-    // {
-    //   title: "Music Player",
-    //   name: "KR Music",
-    //   description:
-    //     "This was my most JavaScript intensive project, I bought an online course in order to help me along with it and it gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that created the foundation for my React knowledge, as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free downloads hosted on their official platforms.",
-    //   mainImg: musicplayer,
-    //   url: "/projects/music-player",
-    //   buttonUrl: "",
-    //   githubUrl: "https://github.com/kairoberts/music_player",
-    //   id: "5",
-    //   learnt: [
-    //     {
-    //       id: "1",
-    //       title: "Audio Files",
-    //       description:
-    //         "Learning JavaScripts build in audio features, to play/pause/skip tracks",
-    //     },
-    //     {
-    //       id: "2",
-    //       title: "useRef",
-    //       description: "Learning how to select specific HTML tags in React",
-    //     },
-    //     {
-    //       id: "3",
-    //       title: "useState",
-    //       description:
-    //         "Learning how to save files within state to be passed down as props",
-    //     },
-    //   ],
-    //   pictures: [
-    //     {
-    //       id: "5",
-    //       alt: "Music Player Images",
-    //       image: comingSoon,
-    //       image1: comingSoon,
-    //       image2: comingSoon,
-    //       image3: comingSoon,
-    //       image4: comingSoon,
-    //       image5: comingSoon,
-    //     },
-    //   ],
-    // },
+    {
+      title: "Music Player",
+      name: "Roberts Radio",
+      description:
+        "This was my most JavaScript intensive project, I bought an online course in order to help me along with it and it gave me a great understanding into how powerful React really is, coming to learn things like useState, useEffect, useRef, React Hooks and more. This was the project that created the foundation for my React knowledge, as now I use this to help me along in any other projects I undertake since it covered alot of ground. Feel free to take a listen to some of my favourite songs I play whilst working, all legally acquired through free downloads hosted on their official platforms.",
+      mainImg: musicplayer,
+      url: "/projects/music-player",
+      buttonUrl: "https://robertsradio.netlify.app",
+      githubUrl: "https://github.com/kairoberts/music_player",
+      id: "5",
+      learnt: [
+        {
+          id: "1",
+          title: "Audio Files",
+          description:
+            "Learning JavaScripts build in audio features, to play/pause/skip tracks",
+        },
+        {
+          id: "2",
+          title: "useRef",
+          description: "Learning how to select specific HTML tags in React",
+        },
+        {
+          id: "3",
+          title: "useState",
+          description:
+            "Learning how to save files within state to be passed down as props",
+        },
+      ],
+      pictures: [
+        {
+          id: "5",
+          alt: "Music Player Images",
+          image: comingSoon,
+          image1: comingSoon,
+          image2: comingSoon,
+          image3: comingSoon,
+          image4: comingSoon,
+          image5: comingSoon,
+        },
+      ],
+    },
     // {
     //   title: "IT Logger - MERN",
     //   name: "IT Logger",

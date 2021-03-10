@@ -7,8 +7,8 @@ const Work = ({ title, image, url }) => {
     <div className="project">
       <ScrollTop />
       <Link to={url}>
-        <h2>{title}</h2>
         <img src={image} alt={title} className="image-array" />
+        <h2>{title}</h2>
       </Link>
     </div>
   );
