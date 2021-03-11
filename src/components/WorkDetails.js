@@ -86,7 +86,7 @@ const WorkDetails = ({ working }) => {
             ))}
           </div>
           <h2 className="gallery">Image Gallery</h2>
-          <div className="image-container">
+          <div className="img-container">
             {work.pictures.map((picture) => (
               <Carousel
                 key={picture.id}

@@ -543,12 +543,7 @@ li {
   display: grid;
   padding: 0rem 5rem 0rem 5rem;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-row-gap: 3rem;
-  justify-items: center;
-}
-
-.image-container h2 {
-  font-weight: lighter;
+  grid-row-gap: 2rem;
 }
 
 .image-array {
@@ -558,19 +553,26 @@ li {
   object-fit: cover;
   display: block;
   width: auto;
-  transition: all 0.5s ease;
+  transition: transform 1s, filter 0.5s ease-in-out;
+  filter: brightness(65%);
 }
 
 .image-array:hover {
-  cursor: pointer;
-  transform: scale(1.02);
+  filter: brightness(100%);
+  transform: scale(1.01);
 }
 
 .project h2 {
-  padding: 1rem;
+  padding: 0.8rem 0rem 0rem 0.5rem;
   font-size: 1.25rem;
   text-align: left;
+  font-weight: lighter;
   color: white;
+}
+
+.project p {
+  padding: 0.1rem 0rem 0rem 0.5rem;
+  color: rgb(192, 192, 192);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
@@ -587,6 +589,8 @@ li {
   .image-array {
     height: 30vh;
     width: 100%;
+    filter: brightness(100%);
+    transform: scale(1);
   }
   .image-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -595,11 +599,11 @@ li {
   .svg-image {
     display: none;
   }
-  .project:hover {
-    transform: scale(1);
-  }
   .back-btn {
     margin-top: 0.3rem;
+  }
+  .project p {
+    padding: 0rem 0rem 0rem 0.55rem;
   }
 }
 
@@ -658,6 +662,11 @@ li {
   font-size: 2.5rem;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .btncontainer {
   display: block;
   margin-top: 2rem;
@@ -669,6 +678,7 @@ li {
   .details {
     display: block;
     padding: 0rem;
+    text-align: center;
   }
   .detail-image {
     height: 30vh;
@@ -676,7 +686,7 @@ li {
   }
   .learnt {
     display: block;
-    padding-top: 8rem;
+    padding: 5rem 0rem 5rem 0rem;
   }
   .learnt-style h3 {
     font-size: 1.9rem;
@@ -695,10 +705,9 @@ li {
 /* Carousel */
 .carousel-container {
   display: flex;
-  width: 81%;
-  height: 75vh;
+  width: 80%;
+  height: 85vh;
   box-sizing: border-box;
-  align-items: center;
   position: relative;
   overflow: hidden;
 }

@@ -27,6 +27,7 @@ const Projects = ({ working }) => {
               <Work
                 title={work.title}
                 image={work.mainImg}
+                date={work.date}
                 key={work.id}
                 url={work.url}
               />
