@@ -227,9 +227,6 @@ li {
 .title h2 {
   font-size: 4.5rem;
   padding: 3%;
-  color: white;
-  text-shadow: -1.5px 1.5px 0 black, 1.5px 1.5px 0 black, 1.5px -1.5px 0 black,
-    -1.5px -1.5px 0 black;
 }
 
 .buttons {
@@ -282,13 +279,14 @@ li {
     display: block;
     margin: 0 auto;
     width: 50%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .title {
     width: 90%;
   }
   .title h2 {
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
   .scroll-arrow {
     display: none;
@@ -351,8 +349,8 @@ li {
 .content-message {
   margin: 0%;
   padding: 1rem 0rem;
-  font-size: 1.2rem;
-  font-weight: lighter;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .skills-container {
