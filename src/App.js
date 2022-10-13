@@ -7,7 +7,7 @@ import About from "./components/About";
 // import Design from "./components/Design";
 import Contact from "./components/Contact";
 import WorkDetails from "./components/WorkDetails";
-import Projects from "./components/Projects";
+//import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 import { Switch, Route } from "react-router-dom";
@@ -32,7 +32,7 @@ function App() {
             <Footer />
           </Route>
           <Route exact path="/projects">
-            <Projects working={working} />
+            {/*<Projects working={working} />*/}
             <Footer />
           </Route>
           <Route path="/projects/:id">

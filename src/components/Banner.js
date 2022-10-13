@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import newcastle from "../images/newcastle.jpg";
-// import cv from "../file/KaiRobertsCV.pdf";
+import cv from "../file/KaiRobertsCV.pdf";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
@@ -40,9 +40,9 @@ const Banner = () => {
               <button className="buttons">Get In Touch</button>
             </Link>
             <br className="mobile-break" />
-            {/* <a className="buttons" href={cv} download="KaiRobertsCV">
+            <a className="buttons" href={cv} download="KaiRobertsCV">
               Download CV
-            </a> */}
+            </a>
           </motion.div>
         </div>
       </div>

@@ -48,7 +48,7 @@ const Nav = () => {
               className="line"
             ></motion.div>
           </li>
-          <li>
+          {/*<li>
             <Link to="/projects">Projects</Link>
             <motion.div
               transition={{ duration: 0.75 }}
@@ -58,7 +58,7 @@ const Nav = () => {
               }}
               className="line"
             ></motion.div>
-          </li>
+            </li>*/}
           <li>
             <Link to="/contact" id="contact">
               Contact

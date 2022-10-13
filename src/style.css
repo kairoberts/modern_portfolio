@@ -57,7 +57,7 @@ li {
   padding-left: 10rem;
   position: relative;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -349,8 +349,8 @@ li {
 .content-message {
   margin: 0%;
   padding: 1rem 0rem;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: none;
 }
 
 .skills-container {
@@ -361,11 +361,6 @@ li {
 .skills-container h3 {
   font-size: 35px;
   padding-bottom: 0.8rem;
-}
-
-.skill {
-  display: inline-block;
-  padding: 0.5rem;
 }
 
 .skill p {
@@ -388,7 +383,9 @@ li {
   }
   .content-message {
     text-align: center;
+    font-size: 1rem;
   }
+
   .image {
     width: 100%;
   }
