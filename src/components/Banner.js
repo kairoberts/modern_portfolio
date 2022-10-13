@@ -26,7 +26,7 @@ const Banner = () => {
         </div>
         <div className="hide">
           <motion.div variants={titleAnimation} className="socials">
-            <a href="https://www.linkedin.com/in/kairobertss" className="icons">
+            <a href="https://www.linkedin.com/in/kai-roberts" className="icons">
               <AiOutlineLinkedin size={45} />
             </a>
             <a href="https://github.com/kairoberts" className="icons">
