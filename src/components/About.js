@@ -12,11 +12,11 @@ const About = () => {
         <img src={kai} alt="Kai Roberts" className="image" />
         <div className="info-container">
           <h2>Kai Roberts</h2>
-          <h3>Technical Support Analyst - 1 Year 7 Months - Fully Remote</h3>
           <h3>
-            2017 – 2020 BSc (Hons) Computer Science (2:1 – 68%), York St. John
+            2017 – 2020 BSc (Hons) Computer Science (2:1 - 68%) - York St. John
             University
           </h3>
+          <h3>Technical Support Analyst - 1 Year 7 Months - Fully Remote</h3>
           <div className="content-message">
             <p>ITIL4 Certified</p>
             <br />
