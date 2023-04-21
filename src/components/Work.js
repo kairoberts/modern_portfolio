@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ScrollTop from "./ScrollTop";
+import { ScrollTop } from "../components/Stuff";
 
 const Work = ({ title, image, url, date }) => {
   return (

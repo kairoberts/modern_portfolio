@@ -20,7 +20,7 @@ body {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 10rem;
+  padding: 0.5rem 8rem;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -34,13 +34,22 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.nav p {
+  font-size: 4rem;
+  transition: all 0.5s ease;
+}
+
+.nav p:hover {
+  transform: scale(1.04);
+}
+
 .line {
   height: 0.1rem;
   background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
   width: 0%;
   position: absolute;
-  bottom: -25%;
-  left: 65%;
+  bottom: -20%;
+  left: 50%;
 }
 
 a {
@@ -54,19 +63,10 @@ ul {
 }
 
 li {
-  padding-left: 10rem;
+  padding-left: 5rem;
   position: relative;
   cursor: pointer;
   font-size: 1.2rem;
-}
-
-.logo {
-  font-size: 4rem;
-  transition: all 0.5s ease;
-}
-
-.logo:hover {
-  transform: scale(1.04);
 }
 
 .scroll-btn {
@@ -92,21 +92,32 @@ li {
   right: 0;
 }
 
+.mobile-icon {
+  display: none;
+}
+
 .menu-container {
   display: none;
 }
 
-.mobile-icon {
-  display: none;
-}
 .menu {
-  display: none;
-}
-.mobile-break {
   display: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
+  .nav{
+    height: 12vh;
+  }
+  .nav p {
+    text-align: center;
+    position: absolute;
+    font-size: 4rem;
+    left: 37%;
+    top: 5%;
+  }
+  .nav p:active {
+    transform: scale(1);
+  }
   ul li {
     display: none;
   }
@@ -117,12 +128,6 @@ li {
     width: 14%;
   }
   .scroll-btn:hover {
-    transform: scale(1);
-  }
-  .logo {
-    margin-left: -0.3rem;
-  }
-  .logo:hover {
     transform: scale(1);
   }
   .menu-container {
@@ -169,39 +174,6 @@ li {
     margin-top: 0.1rem;
     margin-left: 0.5rem;
   }
-  .mobile-socials {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: -1;
-  }
-  .icons {
-    margin-left: 2rem;
-  }
-  .line1 {
-    height: 0.1rem;
-    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
-    width: 0%;
-    position: absolute;
-    bottom: 80%;
-    left: -15%;
-  }
-  .line2 {
-    height: 0.1rem;
-    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
-    width: 0%;
-    position: absolute;
-    bottom: 60%;
-    left: -15%;
-  }
-  .line3 {
-    height: 0.1rem;
-    background-image: linear-gradient(to right, #42e3ff, rgb(0, 189, 110));
-    width: 0%;
-    position: absolute;
-    bottom: 40%;
-    left: -15%;
-  }
 }
 
 /* Banner image starts here */
@@ -209,7 +181,7 @@ li {
   height: 100vh;
   width: 100%;
   object-fit: cover;
-  opacity: 0.9;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -226,12 +198,12 @@ li {
 
 .title h2 {
   font-size: 4.5rem;
-  padding: 3%;
+  padding: 0%;
+  
 }
 
 .buttons {
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   padding: 1rem 1rem;
   outline: none;
@@ -249,7 +221,7 @@ li {
 
 .socials {
   display: block;
-  padding: 0.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .socials a:hover {
@@ -286,111 +258,87 @@ li {
   }
   .title h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+  }
+  .title h1{
+    margin-bottom: 4%;
   }
   .scroll-arrow {
     display: none;
-  }
-  .socials {
-    display: none;
-  }
-  .contact-message {
-    font-size: 0.9rem;
   }
 }
 
 /* Iphone 11 media queries */
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-  .title h2 {
-    font-size: 3.2rem;
-  }
+
 }
 
 /* About Section */
-.about {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
+.container {
+  height: 97vh;
 }
 
-.image {
-  height: 80vh;
-  width: 30%;
-  object-fit: contain;
-  margin-top: 10vh;
-}
+.title-container {
+    padding: 5rem 8rem 1rem 8rem;
+  }
+  
+.title-container h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+  }
 
 .content-info {
-  width: 85%;
+  width: 90%;
   display: flex;
   margin: 0 auto;
   align-items: center;
 }
 
 .info-container {
-  padding: 5rem 2rem 0rem 2rem;
-  width: 65%;
+  padding: 3rem 10rem 0rem 0rem;
+  width: 90%;
   margin: 0 auto;
 }
 
 .info-container h2 {
+  font-size: 2.3rem;
   color: white;
   font-weight: lighter;
 }
 
-.info-container h3 {
-  padding: 1rem 0rem 0rem 0rem;
-  font-weight: lighter;
-}
-
 .content-message {
-  margin: 0%;
-  padding: 1rem 0rem;
-  font-size: 0.8rem;
-  font-weight: none;
+  padding: 1.2rem 3rem 0rem 0rem;
 }
 
-.skills-container {
-  padding-top: 0.5rem;
-  text-align: center;
-}
-
-.skills-container h3 {
-  font-size: 35px;
-  padding-bottom: 0.8rem;
-}
-
-.skill p {
-  padding: 0.5rem;
+.content-message p {
   font-size: 1.1rem;
+  color: white;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .content-info {
-    display: block;
+    /* display: block; */
     width: 100%;
+    height: 60vh;
+    text-align: center;
+    background-color: yellow;
   }
   .info-container {
-    width: 100%;
-    font-size: 1rem;
-    text-align: center;
+    /* width: 100%; */
+    /* text-align: center; */
+    background-color: pink;
   }
   .info-container h2 {
     font-size: 2rem;
+    /* text-align: center; */
   }
   .content-message {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1rem;
-  }
-
-  .image {
-    width: 100%;
-  }
-  .skills-container {
-    width: 100%;
+    line-break: anywhere;
+    background-color: blue;
   }
 }
 
@@ -433,8 +381,8 @@ li {
 
 /* About Questions */
 .about-me {
-  min-height: auto;
-  margin: 8% 0% 5% 0%;
+  min-height: 92vh;
+  padding-top: 12%;
 }
 
 .question {
@@ -482,11 +430,11 @@ li {
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .question {
-    margin-top: 5rem;
-    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 2rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
   }
   .question-h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.5rem;
   }
   .answer p {
@@ -494,7 +442,8 @@ li {
     font-size: 1rem;
   }
   .about-me {
-    min-height: 70vh;
+    min-height: 85vh;
+    top: 20%;
   }
 }
 
@@ -513,25 +462,8 @@ li {
   cursor: pointer;
 }
 
-.work-container {
-  padding: 6rem 8rem 1rem 8rem;
-  min-height: 5vh;
-}
-
-.work-container h2 {
-  font-size: 3rem;
-  font-weight: lighter;
-  color: white;
-  text-align: center;
-}
-
-.work-container p {
-  color: white;
-  text-align: center;
-}
-
 #projects {
-  min-height: 99vh;
+  min-height: 97vh;
 }
 
 .image-container {
@@ -542,7 +474,7 @@ li {
 }
 
 .image-array {
-  height: 48vh;
+  height: 45vh;
   width: 100%;
   cursor: pointer;
   object-fit: cover;
@@ -571,10 +503,10 @@ li {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
-  .work-container {
+  .title-container {
     padding: 6rem 3rem 1rem 3rem;
   }
-  .work-container h2 {
+  .title-container h2 {
     font-size: 2.2rem;
     padding: 0rem;
   }
@@ -604,19 +536,18 @@ li {
 
 /* Work Details */
 .details {
-  min-height: 80vh;
   padding: 0rem 4rem 0rem 4rem;
   display: flex;
 }
 
 .details p {
   color: white;
+  word-wrap: break-word;
   padding: 2rem 2rem 0rem 2rem;
-  font-size: 1.3rem;
 }
 
-.details-container button {
-  margin: 2rem;
+.details-container {
+  width: 55%;
 }
 
 .detail-image {
@@ -650,23 +581,19 @@ li {
 }
 
 .gallery {
-  padding: 3rem;
+  padding: 2.5rem;
   color: white;
   text-align: center;
   font-weight: lighter;
   font-size: 2.5rem;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-}
+
 
 .btncontainer {
   display: block;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 1rem;
-  text-align: left;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
@@ -700,11 +627,12 @@ li {
 /* Carousel */
 .carousel-container {
   display: flex;
-  width: 80%;
-  height: 85vh;
+  width: 60%;
+  height: 65vh;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin-bottom: 3%;
 }
 
 .carousel-slides {
@@ -715,9 +643,10 @@ li {
 }
 
 .img-container {
-  max-width: 100%;
+  width: 100%;
+  display: flex;
   height: auto;
-  object-fit: cover;
+  justify-content: center;
 }
 
 .prev {
@@ -761,8 +690,8 @@ li {
 
 /* Contact Section */
 .form-container {
-  height: 55vh;
-  width: 45%;
+  height: 100%;
+  width: 40%;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -774,20 +703,11 @@ li {
 
 .btn-container {
   text-align: center;
-}
-
-.contact-container {
-  padding: 5rem 8rem 0rem 8rem;
-}
-
-.contact-container h2 {
-  font-size: 3rem;
-  font-weight: lighter;
-  color: white;
-  text-align: center;
+  margin-top: 2%;
 }
 
 form input {
+  min-height: 1.5rem;
   width: 100%;
   background: white;
   outline: none;
@@ -812,17 +732,15 @@ form textarea {
   color: black;
   font-size: 1rem;
   resize: none;
-  padding: 5px 10px;
 }
 
 form label {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 form button {
-  position: absolute;
-  bottom: 2%;
+  position: sticky;
   left: 44%;
 }
 
@@ -831,13 +749,6 @@ form button {
     height: 54vh;
     width: 100%;
     display: block;
-  }
-  .contact-container {
-    padding: 5rem 3rem 0rem 3rem;
-  }
-  .contact-container h2 {
-    margin-top: 1rem;
-    font-size: 2.2rem;
   }
   .btn-container {
     display: block;
@@ -858,11 +769,9 @@ form button {
 
 /* Footer Section */
 footer {
-  min-height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0.5rem;
+  position: static;
+  width: 100%;
+  text-align: center;
 }
 
 footer h3 {
@@ -891,21 +800,14 @@ footer h3 {
 
 /* Large Screen media queries */
 @media only screen and (min-device-width: 1800px) {
-  .logo {
-    height: 80px;
-    width: 170px;
-  }
   .info-container h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .info-container h3 {
     font-size: 1.8rem;
   }
   .info-container p {
-    font-size: 1.3rem;
-  }
-  .skills-container h3 {
-    font-size: 2.3rem;
+    font-size: 1.4rem;
   }
   .question-h2 {
     font-size: 2.2rem;
@@ -914,7 +816,8 @@ footer h3 {
     font-size: 1.3rem;
   }
   .about-me {
-    min-height: 60vh;
+    min-height: 80vh;
+    padding-top: 8%;
   }
   .details {
     padding: 0rem 8rem 0rem 8rem;
@@ -942,11 +845,15 @@ footer h3 {
     font-size: 1.2rem;
   }
   .image-container {
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 0rem 0rem 0rem 10rem;
     grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     grid-row-gap: 4rem;
   }
-}
+  }
+  .about-me{
+    height: 97vh;
+    padding-top: 13%;
+  }
 
 .alert {
   position: absolute;

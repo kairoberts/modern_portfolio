@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "../components/Toggle";
+import { Toggle } from "../components/Stuff";
 import { Link } from "react-router-dom";
 import { AnimateSharedLayout } from "framer-motion";
 
@@ -8,54 +8,44 @@ const AboutQuestions = () => {
     <section>
       <div className="about-me">
         <AnimateSharedLayout>
-          <Toggle title="Why Employ Me?">
+          <Toggle title="Why do I need a website?">
             <div className="answer">
               <p>
-                I will make a great fit into any team as I have good
-                communication skills and like to think I can get along with
-                anyone. I am a firm believer in working hard in order to achieve
-                what you want from life and won't slack off. I would consider
-                myself a go-getter who takes pride in the work I do, so I can be
-                relied on to complete high quality projects. I can work
-                effectively within teams or alone, so won't have any issues
-                regarding how I may need to work.
+                Having a website in 2023 is essential for any business to
+                thrive, allowing you to establish an online presence and reach a
+                wider audience beyond your immediate geographic location. It
+                provides a 24/7 storefront for any products or services you are
+                offering, allowing you to showcase whatever it may be you are
+                wanting customers to see. You can be more personal by showing
+                customers your brands story, communicating your value to them as
+                well as improving your credibility and legitimacy, as businesses
+                without websites may be seen as outdated or unprofessional,
+                especially if other businesses within your space have their own.
               </p>
             </div>
           </Toggle>
 
-          <Toggle title="What Technologies?">
+          <Toggle title="What do I offer?">
             <div className="answer">
               <p>
-                Since graduating University I have made it my goal to learn new
-                tech so I can stay relevant in the industry, so far I have
-                improved on my JavaScript programming, learned the ReactJS
-                library, touched on NodeJS, improved my Python programming and
-                some of MongoDB NoSQL. I am now spending my time improving on my
-                networking knowledge and eventually plan to become certified
-                within AWS and other cloud services.
+                What I offer will vary from business to business depending on
+                what is required for your website. However, this can include
+                things such as, but not limited to, the designing and
+                development of the website, creating custom logos for your
+                website, the purchasing and adding of domain names, free to use
+                or paid for hosting platforms, whether it need to be optimised
+                for search engines and also if it is required to be compatible
+                on mobile devices.
               </p>
             </div>
           </Toggle>
 
-          <Toggle title="Goals In Life?">
-            <div className="answer">
-              <p>
-                My main goals in life right now are to continue learning and
-                improving on new tech and building a solid foundation of
-                knowledge to use in a working environment as well as becoming
-                employed within a field that I desire to work in, justifying all
-                my hard work throughout University. My long term vision would
-                either be being in charge of my own team, managing staff and
-                being the project manager for the tasks I undertake or becoming
-                an IT consultant helping businesses build and secure their
-                networks.
-              </p>
-            </div>
-          </Toggle>
           <Toggle title="How To Get In Touch?">
             <div className="answer">
               <p>
-                You can either visit the{" "}
+                If you would like a free quote for your website, or just have
+                any general questions you would like to ask me, you can either
+                visit the{" "}
                 <Link to="/contact" style={{ color: "cyan" }}>
                   Contact
                 </Link>{" "}
@@ -65,10 +55,9 @@ const AboutQuestions = () => {
                   rel="noreferrer noopener nofollow"
                   style={{ color: "cyan" }}
                 >
-                  kairoberts97@hotmail.co.uk
+                  kai_roberts@icloud.com
                 </a>{" "}
-                to set up an email with me. I will usually respond within the
-                day.
+                to set up an email with me. I aim to respond within the day.
               </p>
             </div>
           </Toggle>

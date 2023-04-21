@@ -35,7 +35,7 @@ const Nav = () => {
       />
       <header className={nav ? "nav active" : "nav"}>
         <Link to="/">
-          <p className="logo">K.R</p>
+          <p>K.R</p>
         </Link>
 
         <ul>
@@ -44,21 +44,28 @@ const Nav = () => {
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
-              animate={{ width: pathname === "/" ? "40%" : "0%" }}
+              animate={{ width: pathname === "/" ? "58%" : "0%" }}
               className="line"
             ></motion.div>
           </li>
-          {/*<li>
-            <Link to="/projects">Projects</Link>
+          <li>
+            <Link to="/about">About</Link>
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
-              animate={{
-                width: pathname === "/projects" ? "40%" : "0%",
-              }}
+              animate={{ width: pathname === "/about" ? "58%" : "0%" }}
               className="line"
             ></motion.div>
-            </li>*/}
+          </li>
+          <li>
+            <Link to="/projects">Portfolio</Link>
+            <motion.div
+              transition={{ duration: 0.75 }}
+              initial={{ width: "0%" }}
+              animate={{ width: pathname === "/projects" ? "52%" : "0%" }}
+              className="line"
+            ></motion.div>
+          </li>
           <li>
             <Link to="/contact" id="contact">
               Contact
@@ -66,7 +73,7 @@ const Nav = () => {
             <motion.div
               transition={{ duration: 0.75 }}
               initial={{ width: "0%" }}
-              animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
+              animate={{ width: pathname === "/contact" ? "53%" : "0%" }}
               className="line"
             ></motion.div>
           </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollTop from "./ScrollTop";
+import { ScrollTop, Wave } from "../components/Stuff";
 import Work from "./Work";
 import { motion } from "framer-motion";
 import { fadeIn, lineAnimation } from "../Animations";
@@ -15,8 +15,9 @@ const Projects = ({ working }) => {
           id="projects"
         >
           <ScrollTop />
-          <div className="work-container">
-            <h2>My Work</h2>
+          <div className="title-container">
+            <Wave />
+            <h2>Portfolio</h2>
             <motion.div
               variants={lineAnimation}
               className="question-line"

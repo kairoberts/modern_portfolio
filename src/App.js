@@ -3,11 +3,10 @@ import "./style.css";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import About from "./components/About";
-// import AboutQuestions from "./components/AboutQuestion";
-// import Design from "./components/Design";
+import AboutQuestions from "./components/AboutQuestion";
 import Contact from "./components/Contact";
 import WorkDetails from "./components/WorkDetails";
-//import Projects from "./components/Projects";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 import { Switch, Route } from "react-router-dom";
@@ -26,13 +25,15 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner />
+            <AboutQuestions />
+            <Footer />
+          </Route>
+          <Route exact path="/about">
             <About />
-            {/* <Design /> */}
-            {/* <AboutQuestions /> */}
             <Footer />
           </Route>
           <Route exact path="/projects">
-            {/*<Projects working={working} />*/}
+            <Projects working={working} />
             <Footer />
           </Route>
           <Route path="/projects/:id">
@@ -41,8 +42,10 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+            <Footer />
           </Route>
           <Route component={Error} />
+          <Footer />
         </Switch>
       </div>
     </AlertState>
