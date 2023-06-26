@@ -21,21 +21,19 @@ const About = () => {
         ></motion.div>
       </div>
       <ScrollTop />
-      <div className="content-info">
-        <div className="info-container">
-          <h2>Kai Roberts - Web Developer</h2>
-          <div className="content-message">
-            <p>
-              I'm a budding Front-End Web Developer based out of Newcastle upon
-              Tyne, England, with a passion for creating visually appealing
-              minimalistic websites. Although I may not have a wealth of
-              experience under my belt, I have a strong understanding of
-              programming languages such as HTML, CSS, and JavaScript. I
-              constantly keep up-to-date with the latest trends and technologies
-              in the Web Development space and look forward to expanding my
-              portfolio with creative web projects.
-            </p>
-          </div>
+      <div className="info-container">
+        <h2>Kai Roberts - Web Developer</h2>
+        <div className="content-message">
+          <p>
+            I'm a budding Front-End Web Developer based out of Newcastle upon
+            Tyne, England, with a passion for creating visually appealing
+            minimalistic websites. Although I may not have a wealth of
+            experience under my belt, I have a strong understanding of
+            programming languages such as HTML, CSS, and JavaScript. I
+            constantly keep up-to-date with the latest trends and technologies
+            in the Web Development space and look forward to expanding my
+            portfolio with creative web projects.
+          </p>
         </div>
       </div>
     </motion.section>

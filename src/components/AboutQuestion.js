@@ -5,10 +5,10 @@ import { AnimateSharedLayout } from "framer-motion";
 
 const AboutQuestions = () => {
   return (
-    <section>
+    <section className="aboutmecontainer">
       <div className="about-me">
         <AnimateSharedLayout>
-          <Toggle title="Why do I need a website?">
+          <Toggle title="Why do you need a website?">
             <div className="answer">
               <p>
                 Having a website in 2023 is essential for any business to

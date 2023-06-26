@@ -3,7 +3,7 @@ import "./style.css";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import About from "./components/About";
-import AboutQuestions from "./components/AboutQuestion";
+// import AboutQuestions from "./components/AboutQuestion";
 import Contact from "./components/Contact";
 import WorkDetails from "./components/WorkDetails";
 import Projects from "./components/Projects";
@@ -25,8 +25,8 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Banner />
-            <AboutQuestions />
-            <Footer />
+            {/* <AboutQuestions /> */}
+            {/* <Footer /> */}
           </Route>
           <Route exact path="/about">
             <About />

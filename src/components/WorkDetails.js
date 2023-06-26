@@ -47,7 +47,7 @@ const WorkDetails = ({ working }) => {
                   href={work.buttonUrl}
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  className="buttons"
+                  className="button1"
                 >
                   Visit Website
                 </a>

@@ -202,7 +202,23 @@ li {
   
 }
 
-.buttons {
+.button1 {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  outline: none;
+  border: 2px solid #42e3ff;
+  background-color: transparent;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.button1:hover {
+  background-color: #42e3ff;
+  color: black;
+}
+
+.button2 {
   font-size: 1.1rem;
   cursor: pointer;
   padding: 1rem 1rem;
@@ -214,14 +230,31 @@ li {
   transition: all 0.5s ease;
 }
 
-.buttons:hover {
+.button2:hover {
+  background-color: #42e3ff;
+  color: black;
+}
+
+.button3 {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  outline: none;
+  border: 2px solid #42e3ff;
+  background-color: transparent;
+  color: white;
+  margin: 3rem;
+  transition: all 0.5s ease;
+}
+
+.button3:hover {
   background-color: #42e3ff;
   color: black;
 }
 
 .socials {
   display: block;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .socials a:hover {
@@ -247,11 +280,13 @@ li {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
-  .buttons {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 1.2rem;
+  .details-container {
+    margin: auto;
+  }
+  .button1 {
+    position: absolute;
+    top: 76%;
+    left: 33%;
   }
   .title {
     width: 90%;
@@ -289,13 +324,6 @@ li {
     text-align: center;
   }
 
-.content-info {
-  width: 90%;
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-}
-
 .info-container {
   padding: 3rem 10rem 0rem 0rem;
   width: 90%;
@@ -318,27 +346,20 @@ li {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
-  .content-info {
-    /* display: block; */
-    width: 100%;
-    height: 60vh;
-    text-align: center;
-    background-color: yellow;
-  }
   .info-container {
-    /* width: 100%; */
-    /* text-align: center; */
-    background-color: pink;
+    position: absolute;
+    padding: 0%;
+    text-align: center;
+    left: 5%;
   }
   .info-container h2 {
-    font-size: 2rem;
-    /* text-align: center; */
+    font-size: 1.8rem;
+    text-align: center;
   }
   .content-message {
-    /* text-align: center; */
     font-size: 1rem;
-    line-break: anywhere;
-    background-color: blue;
+    padding: 1rem 0rem 0rem 0rem;
+  
   }
 }
 
@@ -380,16 +401,12 @@ li {
 }
 
 /* About Questions */
-.about-me {
-  min-height: 92vh;
-  padding-top: 12%;
-}
-
 .question {
   text-align: center;
   color: white;
   padding: 0rem 10rem 0rem 10rem;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .answer {
@@ -399,7 +416,7 @@ li {
 
 .answer p {
   padding: 0rem 3rem 0rem 3rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .question-h2 {
@@ -412,7 +429,7 @@ li {
 .question-line {
   background-image: linear-gradient(to right, #42e3ff, rgb(140, 0, 255));
   height: 0.25rem;
-  margin: 1rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
   width: 100%;
   text-align: center;
 }
@@ -434,7 +451,7 @@ li {
     padding: 0rem 1.5rem 0rem 1.5rem;
   }
   .question-h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
   }
   .answer p {
@@ -444,6 +461,7 @@ li {
   .about-me {
     min-height: 85vh;
     top: 20%;
+    width: 100%;
   }
 }
 
@@ -746,7 +764,7 @@ form button {
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .form-container {
-    height: 54vh;
+    height: 55vh;
     width: 100%;
     display: block;
   }
@@ -756,9 +774,9 @@ form button {
   }
   #contact-btn {
     position: absolute;
-    left: 25%;
+    left: 15%;
     width: 50%;
-  }
+  } 
   form input {
     height: 2rem;
   }
@@ -769,7 +787,6 @@ form button {
 
 /* Footer Section */
 footer {
-  position: static;
   width: 100%;
   text-align: center;
 }
@@ -814,10 +831,6 @@ footer h3 {
   }
   .answer p {
     font-size: 1.3rem;
-  }
-  .about-me {
-    min-height: 80vh;
-    padding-top: 8%;
   }
   .details {
     padding: 0rem 8rem 0rem 8rem;
