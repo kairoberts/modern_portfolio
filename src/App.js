@@ -9,7 +9,7 @@ import WorkDetails from "./components/WorkDetails";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
-import { Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { WorkState } from "./WorkState";
 import MobileMenu from "./components/MobileMenu";
 import AlertState from "./context/AlertState";
@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <Nav />
         <MobileMenu />
-        <Switch>
+        <Routes>
           <Route exact path="/">
             <Banner />
             {/* <AboutQuestions /> */}
@@ -46,7 +46,7 @@ function App() {
           </Route>
           <Route component={Error} />
           <Footer />
-        </Switch>
+        </Routes>
       </div>
     </AlertState>
   );
