@@ -1,6 +1,6 @@
 {
-  "short_name": "Modern Portfolio",
-  "name": "My Updated React Portfolio",
+  "short_name": "Portfolio",
+  "name": "My React Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
