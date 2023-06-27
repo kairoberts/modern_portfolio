@@ -17,7 +17,7 @@ const Projects = ({ working }) => {
           <ScrollTop />
           <div className="title-container">
             <Wave />
-            <h2>Portfolio</h2>
+            <h2>Projects</h2>
             <motion.div
               variants={lineAnimation}
               className="question-line"

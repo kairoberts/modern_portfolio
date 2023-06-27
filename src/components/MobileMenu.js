@@ -39,7 +39,7 @@ export const MobileMenu = () => {
           <div onClick={() => setMenuStatus(!menuStatus)}>
             <Link to="/projects">
               <BsClipboardData className="menu-icons" />
-              <p className="menu-links">Portfolio</p>
+              <p className="menu-links">Projects</p>
             </Link>
           </div>
           <div onClick={() => setMenuStatus(!menuStatus)}>

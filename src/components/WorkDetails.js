@@ -42,12 +42,12 @@ const WorkDetails = ({ working }) => {
             <img src={work.mainImg} alt={work.title} className="detail-image" />
             <div className="details-container">
               <p>{work.description}</p>
-              <div className="btncontainer">
+              <div className="btncontainer1">
                 <a
                   href={work.buttonUrl}
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  className="button1"
+                  className="button3"
                 >
                   Visit Website
                 </a>

@@ -255,7 +255,6 @@ li {
 
 .socials {
   display: block;
-  padding-bottom: 0.5rem;
 }
 
 .socials a:hover {
@@ -342,7 +341,7 @@ li {
 }
 
 .content-message p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -566,7 +565,13 @@ li {
 }
 
 .details-container {
-  width: 55%;
+  width: 100%;
+}
+
+.btncontainer1{
+  margin-top: 10%;
+  text-align: center;
+
 }
 
 .detail-image {

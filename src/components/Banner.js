@@ -20,14 +20,12 @@ const Banner = () => {
       <div className="title">
         <div className="hide">
           <motion.h2 variants={titleAnimation}>Kai Roberts</motion.h2>
-          <motion.h1 variants={titleAnimation}>
-            Aspiring Web Developer
-          </motion.h1>
+          <motion.h1 variants={titleAnimation}>Online Portfolio</motion.h1>
         </div>
         <div className="hide">
           <motion.div variants={titleAnimation} className="socials">
             <a href="https://www.linkedin.com/in/kai-roberts">
-              <AiOutlineLinkedin size={45} />
+              <AiOutlineLinkedin size={44} />
             </a>
             <a href="https://github.com/kairoberts">
               <AiFillGithub size={45} />

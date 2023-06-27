@@ -5,14 +5,14 @@ import comingSoon from "./images/comingsoon.jpg";
 export const WorkState = () => {
   return [
     {
-      title: "Coming Soon",
-      name: "Coming soon",
-      date: "TBA",
-      description: "Information regarding the website will be displayed here",
+      title: "Roberts Radio",
+      name: "Roberts Radio",
+      date: "June 2020",
+      description: "Info to be added",
       mainImg: comingSoon,
       id: "1",
       url: "/projects/client",
-      buttonUrl: "https://www.kairoberts.dev",
+      buttonUrl: "https://robertsradio.netlify.app",
       learnt: [
         {
           id: "1",
