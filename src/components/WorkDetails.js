@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { pageAnimations, lineAnimation, fadeIn } from "../Animations";
 import { ScrollTop, Carousel, Wave } from "../components/Stuff";
 import { IoIosArrowBack } from "react-icons/io";
 
 const WorkDetails = ({ working }) => {
-  const history = useNavigate();
-  const url = history.location.pathname;
+  const location = useLocation();
+  const url = location.pathname;
   const [work, setWork] = useState(null);
 
   useEffect(() => {

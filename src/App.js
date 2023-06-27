@@ -7,7 +7,6 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import WorkDetails from "./components/WorkDetails";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import Error from "./components/Error";
 import { Route, Routes } from "react-router-dom";
 import { WorkState } from "./WorkState";
@@ -23,29 +22,19 @@ function App() {
         <Nav />
         <MobileMenu />
         <Routes>
-          <Route exact path="/">
-            <Banner />
-            {/* <AboutQuestions /> */}
-            {/* <Footer /> */}
-          </Route>
-          <Route exact path="/about">
-            <About />
-            <Footer />
-          </Route>
-          <Route exact path="/projects">
-            <Projects working={working} />
-            <Footer />
-          </Route>
-          <Route path="/projects/:id">
-            <WorkDetails working={working} />
-            <Footer />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-            <Footer />
-          </Route>
-          <Route component={Error} />
-          <Footer />
+          <Route exact path="/" element={<Banner />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+          <Route
+            exact
+            path="/projects"
+            element={<Projects working={working} />}
+          ></Route>
+          <Route
+            path="/projects/:id"
+            element={<WorkDetails working={working} />}
+          ></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route component={Error} element={<Error />} />
         </Routes>
       </div>
     </AlertState>
