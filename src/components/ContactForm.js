@@ -10,11 +10,11 @@ const ContactForm = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (text === "") {
-      alertContext.setAlert("Message Sent!");
+      alertContext.setAlert("Message Sent");
     }
     emailjs
       .sendForm(
-        "outlook",
+        "service_uylzqu7",
         "outlook_template",
         e.target,
         "user_eGGN8mAzPC10UVSag7A5o"

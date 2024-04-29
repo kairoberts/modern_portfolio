@@ -520,6 +520,10 @@ li {
   color: rgb(192, 192, 192);
 }
 
+.list-container{
+  margin-bottom: 1%;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .title-container {
     padding: 6rem 3rem 1rem 3rem;
@@ -877,19 +881,18 @@ footer h3 {
 .alert {
   position: absolute;
   left: 45%;
-  top: 80%;
+  top: 90%;
   display: flex;
   justify-content: center;
   font-size: 1.3rem;
-  color: greenyellow;
+  color: yellowgreen;
 }
 
-.alert-icon {
-  margin-left: 0.5rem;
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 580px) {
   .alert {
-    left: 28%;
+    top: 95%;
+    left: 35%;
   }
 }

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { TiTickOutline } from "react-icons/ti";
 import AlertContext from "../context/alertContext";
 
 const Alert = () => {
@@ -10,7 +9,6 @@ const Alert = () => {
     alert !== null && (
       <div className="alert">
         <p>{alert.message}</p>
-        <TiTickOutline className="alert-icon" size={30} />
       </div>
     )
   );
